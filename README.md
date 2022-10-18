@@ -1,11 +1,11 @@
 # Desafio de código: página web
-Desafio de código: a partir da referência indicada, construir um site responsivo com, pelo menos, 5 páginas, fazenod uso de HTML, css + sass e JavaScript.
+Desafio de código: a partir da referência indicada, construir um site responsivo com, pelo menos, 5 páginas, fazendo uso de HTML, css + sass e JavaScript.
 
 # Sobre a estrutura do site
 O site simula uma página de escola de cursos online, contendo diferentes elementos em cada página. A seguir, uma ideia da estrutura geral das páginas do projeto.
 
 01 Página inicial:
--  HEADER com logo e links, junto da PRIMEIRA SEÇÃO (nav) com Imagem e frase/slogan;
+- HEADER com logo e links, junto da PRIMEIRA SEÇÃO (nav) com Imagem e frase/slogan;
 - MENU entre PRIMEIRA E SEGUNDA SEÇÃO com as demais páginas;
 - SEGUNDA SEÇÃO com imagem e breve descrição da proposta do cliente;
 - TERCEIRA SEÇÃO com imagens da infraestrutura;
