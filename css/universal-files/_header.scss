@@ -1,0 +1,29 @@
+@import "./reset-stylesheet";
+
+.logo {
+    height: 10vh;
+    width: auto;
+}
+
+header {
+    height: 12vh;
+    margin: 0;
+    padding: 0vh 5vh 0vh 5vh;
+    display: flex;
+    flex-direction: column;
+    background-color: $blackColor;
+    a {
+        color: $offWhiteColor;
+    }
+}
+
+.topheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signlist {
+    display: flex;
+    gap: 2vh;
+}

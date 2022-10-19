@@ -1,0 +1,97 @@
+@import url("http://fonts.cdnfonts.com/css/barlow");
+@import url("http://fonts.cdnfonts.com/css/barlow");
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 3.5vh;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 3vh;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 2.5vh;
+  font-weight: 400;
+}
+
+p {
+  font-size: 2vh;
+  font-weight: 300;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 3.5vh;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 3vh;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 2.5vh;
+  font-weight: 400;
+}
+
+p {
+  font-size: 2vh;
+  font-weight: 300;
+}
+
+.logo {
+  height: 10vh;
+  width: auto;
+}
+
+header {
+  height: 12vh;
+  margin: 0;
+  padding: 0vh 5vh 0vh 5vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+}
+header a {
+  color: #F5F5F5;
+}
+
+.topheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signlist {
+  display: flex;
+  gap: 2vh;
+}
+
+nav {
+  height: 40vh;
+  background-image: url(../../img/landing-page/background.jpg);
+  margin: 0;
+}/*# sourceMappingURL=landing-stylesheet.css.map */

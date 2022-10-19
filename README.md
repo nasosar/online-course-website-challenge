@@ -36,3 +36,6 @@ O site simula uma página de escola de cursos online, contendo diferentes elemen
 - HEADER (mantém) com logo e links, não mantém nav;
 - SEÇÃO ÚNICA com cada evento (contido em boxes) com título, descrição e valores;
 - FOOTER (mantém) com logo, links para informações de contatos, valores etc.
+
+# Cŕeditos
+- Imagem de fundo: Foto de LeninEstrada
