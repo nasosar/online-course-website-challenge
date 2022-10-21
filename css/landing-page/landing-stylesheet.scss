@@ -1,10 +1,50 @@
 @import "../universal-files/reset-stylesheet";
 @import "../universal-files/header";
+@import "../universal-files/footer";
 
 
-nav {
-    height: 40vh;
-    background-image: url(../../img/landing-page/background.jpg);
-    margin: 0;
+section#action {
+    height: 50vh;
+    width: auto;
+    padding: 0 10%;
+    background-image: url(../../img/landing-page/background-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    @include flexCenter (column);
+
+    h1 {
+        color: $offWhiteColor;
+        margin: 0;
+        font-weight: 700;
+        text-shadow: $boxShadow;
+    }
+
+    button {
+        margin-top: 3vh;
+        width: 42vh;
+        height: 8vh;
+        font-weight: bold;
+        border: .3vh solid $pinkColor;
+        color: $pinkColor;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: 0.3s;
+        border-radius: 4px;
+        font-size: 1.8vh;
+        text-shadow: $boxShadow;
+    }
+
+    button:hover {
+        background-color: $pinkColor;
+        color: $offWhiteColor;
+        font-size: 2vh;
+    }
+
+    p {
+        text-align: center;
+        color: $offWhiteColor;
+        width: 42vh;
+        font-weight: 400;
+        margin: 0;
+    }
 }
-

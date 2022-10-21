@@ -5,6 +5,7 @@ $greenColor: #00D4C8;
 $orangeColor: #FE9434;
 $offWhiteColor: #F5F5F5;
 $blackColor: #000000;
+$boxShadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 @mixin flexCenter($direction) {
     display: flex;
