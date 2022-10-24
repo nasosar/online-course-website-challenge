@@ -1,34 +1,8 @@
 @import url("http://fonts.cdnfonts.com/css/barlow");
 @import url("http://fonts.cdnfonts.com/css/barlow");
-body {
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  font-family: "Barlow", sans-serif;
-}
-
-ul {
-  list-style-type: none;
-}
-
-h1 {
-  font-size: 3.5vh;
-  font-weight: 500;
-}
-
-h2 {
-  font-size: 3vh;
-  font-weight: 400;
-}
-
-h3 {
-  font-size: 2.5vh;
-  font-weight: 400;
-}
-
-p {
-  font-size: 2vh;
-  font-weight: 300;
+@import url("http://fonts.cdnfonts.com/css/barlow");
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -36,45 +10,109 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Barlow", sans-serif;
-}
-
-ul {
-  list-style-type: none;
-}
-
-h1 {
-  font-size: 3.5vh;
-  font-weight: 500;
-}
-
-h2 {
-  font-size: 3vh;
-  font-weight: 400;
-}
-
-h3 {
-  font-size: 2.5vh;
-  font-weight: 400;
-}
-
-p {
-  font-size: 2vh;
-  font-weight: 300;
 }
 
 .logo {
-  height: 6vh;
+  height: 7vh;
   width: auto;
 }
 
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 3.5vh;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 3vh;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 2.5vh;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 2vh;
+  font-weight: 500;
+}
+
+p {
+  font-size: 2vh;
+  font-weight: 300;
+}
+
+a {
+  font-size: 2vh;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow", sans-serif;
+}
+
+.logo {
+  height: 7vh;
+  width: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 3.5vh;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 3vh;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 2.5vh;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 2vh;
+  font-weight: 500;
+}
+
+p {
+  font-size: 2vh;
+  font-weight: 300;
+}
+
+a {
+  font-size: 2vh;
+  text-decoration: none;
+}
+
 header {
-  height: 14vh;
+  height: 15vh;
+  width: 100vw;
   margin: 0;
   padding: 0 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: #000000;
+}
+header .logo {
+  margin-top: 1vh;
 }
 header a {
   color: #F5F5F5;
@@ -83,11 +121,13 @@ header a {
 hr.solid {
   width: 100%;
   border-top: 1px solid rgba(245, 245, 245, 0.1);
+  margin: -1px;
 }
 
 hr.hrmenu {
   height: 50%;
   border-left: 1px solid rgba(245, 245, 245, 0.1);
+  margin: -1px;
 }
 
 .topheader {
@@ -102,22 +142,232 @@ hr.hrmenu {
 }
 
 .mainmeu {
-  height: 8vh;
+  height: 7vh;
   width: 100%;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   gap: 2vh;
-  background-color: #000000;
+  background-color: transparent;
+}
+
+.submenu {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  font-size: 2vh;
+  text-decoration: none;
+  transition: all 0.5s ease 0s;
+  color: #F5F5F5;
+  background-color: transparent;
+}
+.submenu .cursoslist {
+  display: none;
+}
+
+.submenu:hover {
+  color: #00D4C8;
+  position: static;
+}
+.submenu:hover .cursoslist {
+  display: block;
+  position: absolute;
+  text-align: center;
+  align-self: center;
+  padding: 2.5vh 0 0 0;
+  margin-top: 2.5vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.submenu:hover .cursoslist .listitems {
+  padding: 1vh 3vw;
+}
+
+.mainmenulink {
+  text-decoration: none;
+  transition: all 0.5s ease 0s;
+  background-color: transparent;
+}
+
+.mainmenulink:hover {
+  color: #00D4C8;
+}
+
+.mainmenulink:hover {
+  color: #00D4C8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow", sans-serif;
+}
+
+.logo {
+  height: 7vh;
+  width: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 3.5vh;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 3vh;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 2.5vh;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 2vh;
+  font-weight: 500;
+}
+
+p {
+  font-size: 2vh;
+  font-weight: 300;
 }
 
 a {
+  font-size: 2vh;
+  text-decoration: none;
+}
+
+footer {
+  height: 28vh;
+  padding: 0 10%;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  gap: 5vh;
+  color: #F5F5F5;
+}
+
+.footercontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.brandinfo {
+  width: 30vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5vh;
+}
+.brandinfo .logo {
+  align-self: start;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2vh;
+  align-self: start;
+}
+.socials .socialicon {
+  width: 2.5vh;
+  height: auto;
+}
+
+.listcontainerAB {
+  margin-top: 2.5vh;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  gap: 5vh;
+}
+
+.listfooter {
+  padding: 0;
+  margin: 0;
+}
+
+#listA, #listB {
+  display: flex;
+  flex-direction: column;
+}
+#listA h4, #listB h4 {
+  margin-bottom: 2vh;
+}
+
+.linksListaA {
+  font-size: 2vh;
+  color: #F5F5F5;
   text-decoration: none;
   transition: all 0.5s ease 0s;
 }
 
-a:hover {
+.linksListaA:hover {
   color: #00D4C8;
+}
+
+.itemsListaB {
+  font-size: 2vh;
+}
+
+.listC {
+  margin-top: 2.5vh;
+  padding: 0;
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2vh;
+}
+
+.inputandbtn {
+  display: flex;
+  max-width: 100%;
+}
+
+#useremail {
+  width: 80%;
+}
+
+.useremailbtn {
+  width: 20%;
+  border: transparent;
+  background-color: #E54190;
+  color: #F5F5F5;
+  transition: 0.3s;
+  border-radius: 0 4px 4px 0;
+  font-size: 1.8vh;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.useremailbtn:hover {
+  color: #000000;
+  cursor: pointer;
+}
+
+#useremail {
+  border: 0.05vh solid #E54190;
+  border-radius: 4px 0 0 4px;
+}
+
+.listCtitulo {
+  margin: 2.5vh 0 2vh 0;
+}
+
+.listCtexto, .useremailbtn, .labelemail, #useremail {
+  margin: 0;
 }
 
 section#action {
@@ -139,6 +389,13 @@ section#action h1 {
   font-weight: 700;
   text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+section#action p {
+  text-align: center;
+  color: #F5F5F5;
+  width: 42vh;
+  font-weight: 400;
+  margin: 0;
+}
 section#action button {
   margin-top: 3vh;
   width: 42vh;
@@ -151,16 +408,58 @@ section#action button {
   border-radius: 4px;
   font-size: 1.8vh;
   text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
 }
 section#action button:hover {
   background-color: #E54190;
   color: #F5F5F5;
   font-size: 2vh;
 }
-section#action p {
-  text-align: center;
+@media (max-width: 1099px) {
+  section#action {
+    height: 90vh;
+    background-color: red;
+  }
+}
+
+.menucentral {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 18vh;
+  width: 80vw;
+  margin: -9vh 0 0 9vw;
+  padding: 0;
+  border-radius: 8px;
+  background-color: #E54190;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.itemMenuCentral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 100%;
+  padding: 2%;
+  border-radius: 8px;
   color: #F5F5F5;
-  width: 42vh;
-  font-weight: 400;
-  margin: 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2vh;
+  transition: 0.3s;
+}
+
+.itemMenuCentral:hover {
+  background-color: #F5F5F5;
+  color: #E54190;
+  height: 110%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.hrmenucentral {
+  height: 50%;
+  border-left: 1px solid rgba(245, 245, 245, 0.1);
+  margin: -1px;
 }/*# sourceMappingURL=landing-stylesheet.css.map */

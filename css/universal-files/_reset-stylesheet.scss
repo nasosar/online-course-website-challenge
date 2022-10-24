@@ -5,6 +5,7 @@ $greenColor: #00D4C8;
 $orangeColor: #FE9434;
 $offWhiteColor: #F5F5F5;
 $blackColor: #000000;
+$blackTransparent:rgba(0, 0, 0, 0.5);
 $boxShadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 @mixin flexCenter($direction) {
@@ -14,11 +15,21 @@ $boxShadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     justify-content: center;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
     font-family: 'Barlow', sans-serif;
+}
+
+//tamanho da logo
+.logo {
+    height: 7vh;
+    width: auto;
 }
 
 ul {
@@ -40,7 +51,17 @@ h3 {
     font-weight: 400;
 }
 
+h4 {
+    font-size: 2vh;
+    font-weight: 500;
+}
+
 p {
     font-size: 2vh;
     font-weight: 300;
+}
+
+a {
+    font-size: 2vh;
+    text-decoration: none;
 }

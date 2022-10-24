@@ -1,8 +1,9 @@
+//importa os arquivos externos 
 @import "../universal-files/reset-stylesheet";
 @import "../universal-files/header";
 @import "../universal-files/footer";
 
-
+// edição da seção abaixo do navbar
 section#action {
     height: 50vh;
     width: auto;
@@ -13,6 +14,7 @@ section#action {
     background-size: 100%;
     @include flexCenter (column);
 
+    //edita o título do call to action
     h1 {
         color: $offWhiteColor;
         margin: 0;
@@ -20,6 +22,16 @@ section#action {
         text-shadow: $boxShadow;
     }
 
+    //edita o texto que precede o call to action
+    p {
+        text-align: center;
+        color: $offWhiteColor;
+        width: 42vh;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    //edita o botão "QUERO FAZER PARTE"
     button {
         margin-top: 3vh;
         width: 42vh;
@@ -32,6 +44,7 @@ section#action {
         border-radius: 4px;
         font-size: 1.8vh;
         text-shadow: $boxShadow;
+        cursor: pointer;
     }
 
     button:hover {
@@ -40,11 +53,47 @@ section#action {
         font-size: 2vh;
     }
 
-    p {
-        text-align: center;
-        color: $offWhiteColor;
-        width: 42vh;
-        font-weight: 400;
-        margin: 0;
+    @media (max-width: 1099px) {
+        height: 90vh;
+        background-color: red;
     }
+}
+
+.menucentral {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 18vh;
+    width: 80vw;
+    margin: -9vh 0 0 9vw;
+    padding: 0;
+    border-radius: 8px;
+    background-color: $pinkColor;
+    box-shadow: $boxShadow;
+}
+
+.itemMenuCentral {
+    @include flexCenter (column);
+    width: 20%;
+    height: 100%;
+    padding: 2%;
+    border-radius: 8px;
+    color: $offWhiteColor;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2vh;
+    transition: 0.3s;
+}
+
+.itemMenuCentral:hover {
+    background-color: $offWhiteColor;
+    color: $pinkColor;
+    height: 110%;
+    box-shadow: $boxShadow;   
+}
+
+.hrmenucentral {
+    height: 50%;
+    border-left: 1px solid rgba(245, 245, 245, 0.1);
+    margin: -1px;
 }

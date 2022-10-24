@@ -39,3 +39,4 @@ O site simula uma página de escola de cursos online, contendo diferentes elemen
 
 # Cŕeditos
 - Imagem de fundo: Foto de LeninEstrada
+- Ícones de redes sociais: Rebin Infotech

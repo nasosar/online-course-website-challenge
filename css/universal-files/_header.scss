@@ -1,59 +1,106 @@
 @import "./reset-stylesheet";
 
-.logo {
-    height: 6vh;
-    width: auto;
-}
-
+//container de todos os elemntos da header (logo, sign in/up e navbar)
 header {
-    height: 14vh;
+    height: 15vh;
+    width: 100vw;
     margin: 0;
     padding: 0 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: $blackColor;
+    //afasta a logo do topo da página em 1vh
+    .logo {
+        margin-top: 1vh;
+    }
     a {
         color: $offWhiteColor;
     }
 }
 
+//edita a linha divisória horizontal
 hr.solid {  
     width: 100%;
     border-top: 1px solid rgba(245, 245, 245, 0.1);
+    margin: -1px;
   }
 
+//edita as linhas divisórias verticais
   hr.hrmenu {  
     height: 50%;
     border-left: 1px solid rgba(245, 245, 245, 0.1);
+    margin: -1px;
   }
 
+//container dos itens superiores da header (logo, sign up e sign in) 
 .topheader {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+//edita a lista de sign up e sign in
 .signlist {
     display: flex;
     gap: 4vh;
 }
 
+//navabar - menu de navegação
 .mainmeu {
-    height: 8vh;
+    height: 7vh;
     width: 100%;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     gap: 2vh;
-    background-color: $blackColor;
+    background-color: transparent;
 }
 
-a {
+.submenu {
+    .cursoslist{
+        display: none;
+    }
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    font-size: 2vh;
     text-decoration: none;
     transition: all 0.5s ease 0s;
+    color: $offWhiteColor;
+    background-color: transparent;
 }
 
-a:hover {
+.submenu:hover {
+    .cursoslist{
+        display: block;
+        position: absolute;
+        text-align: center;
+        align-self: center;
+        padding: 2.5vh 0 0 0;
+        margin-top: 2.5vh;
+        background-color: $blackTransparent;
+        .listitems{
+            padding: 1vh 3vw;
+        }
+    }
+    color: $greenColor;
+    position: static;
+}
+
+
+//links presentas na header (tanto itens superiores como menu navbar)
+.mainmenulink {
+    text-decoration: none;
+    transition: all 0.5s ease 0s;
+    background-color: transparent;
+}
+
+.mainmenulink:hover {
+    color: $greenColor;
+}
+
+.mainmenulink:hover {
     color: $greenColor;
 }
