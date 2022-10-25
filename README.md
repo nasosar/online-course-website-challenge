@@ -40,3 +40,7 @@ O site simula uma página de escola de cursos online, contendo diferentes elemen
 # Cŕeditos
 - Imagem de fundo: Foto de LeninEstrada
 - Ícones de redes sociais: Rebin Infotech
+- Imagem do card "Aulas presenciais": Fauxels
+- Imagem do card "Aulas online": ROMAN ODINTSOV
+- Imagem do card "Grupos de estudo": Canva Studio
+- Imagem do card "Mentorias individuais": Nappy
