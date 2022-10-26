@@ -44,3 +44,4 @@ O site simula uma página de escola de cursos online, contendo diferentes elemen
 - Imagem do card "Aulas online": ROMAN ODINTSOV
 - Imagem do card "Grupos de estudo": Canva Studio
 - Imagem do card "Mentorias individuais": Nappy
+- Imagens dos cards "Avaliações": Andrea Piacquadio
