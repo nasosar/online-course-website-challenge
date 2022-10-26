@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("http://fonts.cdnfonts.com/css/barlow");
 @import url("http://fonts.cdnfonts.com/css/barlow");
 @import url("http://fonts.cdnfonts.com/css/barlow");
@@ -169,7 +170,7 @@ hr.hrmenu {
 }
 
 .submenu:hover {
-  color: #00D4C8;
+  color: #96d9d5;
   position: static;
 }
 .submenu:hover .cursoslist {
@@ -192,11 +193,11 @@ hr.hrmenu {
 }
 
 .mainmenulink:hover {
-  color: #00D4C8;
+  color: #96d9d5;
 }
 
-.mainmenulink:hover {
-  color: #00D4C8;
+.signlink:hover {
+  color: #96d9d5;
 }
 
 * {
@@ -318,7 +319,7 @@ footer {
 }
 
 .linksListaA:hover {
-  color: #00D4C8;
+  color: #96d9d5;
 }
 
 .itemsListaB {
@@ -373,6 +374,7 @@ footer {
   margin: 0;
 }
 
+/* início da estilização do call to action, abaixo do menu nav */
 section#action {
   height: 50vh;
   width: auto;
@@ -385,6 +387,7 @@ section#action {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* botão 'call to action' */
 }
 section#action h1 {
   color: #F5F5F5;
@@ -421,7 +424,6 @@ section#action button:hover {
 @media (max-width: 1099px) {
   section#action {
     height: 90vh;
-    background-color: red;
   }
 }
 
@@ -467,6 +469,7 @@ section#action button:hover {
   margin: -1px;
 }
 
+/* início da estilização da seção 1 - personalize o aprendizado */
 .section1 {
   height: 90%;
   width: 100%;
@@ -485,6 +488,7 @@ section#action button:hover {
   text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+/*contém todos os cards com valores */
 .containervalores {
   height: 90%;
   width: 100%;
@@ -497,6 +501,7 @@ section#action button:hover {
   gap: 5vh;
 }
 
+/*cards de valores */
 .valores {
   height: 35vh;
   width: 50vh;
@@ -556,4 +561,84 @@ section#action button:hover {
   height: 22vh;
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px;
+}
+
+/* início da estilização da seção 2 - avaliações */
+.section2 {
+  height: 90%;
+  width: 100%;
+  padding: 5% 10%;
+  background-color: #96d9d5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vh;
+  justify-content: space-evenly;
+}
+
+.h2avaliacoes {
+  color: #303030;
+  margin: 0;
+  font-weight: 600;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/*container dos cards de avaliação*/
+.avalcontainer {
+  height: 90%;
+  width: 100%;
+  padding: 3% 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5vh;
+}
+
+/*cards de avaliação*/
+.articleaval {
+  height: 30vh;
+  width: 45vh;
+  padding: 1%;
+  margin: 0;
+  border-radius: 8px;
+  background-color: #F5F5F5;
+  border: 0.1vh solid #303030;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2vh;
+}
+
+.avalimg {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 20vh;
+  height: 25vh;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px;
+}
+
+.containeraluno {
+  color: #303030;
+  width: 40%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: fstart;
+  text-align: left;
+  font-weight: 450;
+  gap: 1vh;
+}
+
+.h3aval {
+  margin: 0;
+  font-weight: 500;
+}
+
+.avaltexto {
+  margin: 0;
 }/*# sourceMappingURL=landing-stylesheet.css.map */
