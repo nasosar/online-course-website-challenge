@@ -83,13 +83,17 @@ hr.solid {
         background-color: $blackTransparent;
         .listitems{
             padding: 1vh 3vw;
+            a {
+                transition: all 0.5s ease 0s;
+            }
+            a:hover {
+                color: $greenColor;
+            }
         }
     }
     color: $greenColor;
     position: static;
 }
-
-
 //links presentas na header (tanto itens superiores como menu navbar)
 .mainmenulink {
     text-decoration: none;

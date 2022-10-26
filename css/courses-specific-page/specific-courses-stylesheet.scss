@@ -1,0 +1,159 @@
+@import "../universal-files/reset-stylesheet";
+@import "../universal-files/header";
+@import "../universal-files/footer";
+
+/*início da estilização da seção de descrição do curso */
+.sectionDescricao {
+    height: 50vh;
+    padding: 2% 10% 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vw;
+}
+
+.containerDescricao {
+    width: 55vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+}
+
+.h1tituloUXUi {
+    color: $orangeColor;
+    text-shadow: rgba(0, 0, 0, 0.18) 0px 5px 10px;
+    margin: 0;
+    font-weight: 700;
+    font-size: 7vh;
+
+}
+
+.pDescricao {
+    margin: 0;
+    font-weight: 400;
+    text-align: left;
+}
+
+.btnDescricao {
+    width: 25vh;
+    height: 5.5vh;
+    font-weight: bold;
+    color: $blackColor;
+    background-color: $orangeColor;
+    transition: 0.3s;
+    border: 0;
+    border-radius: 4px;
+    font-size: 1.8vh;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: $blackColor;
+    color: $orangeColor;
+    font-size: 2vh;
+    border: 0;
+}
+
+
+.videoContainer {
+    iframe {
+        border-radius: 8px;
+    }
+}
+
+/*início da seção de modalidades de curso*/
+
+.sectionModalidades {
+    height: 35vh;
+    padding: 0 10% 5% 10%;
+    @include flexCenter (row);
+}
+
+.bordaModalidade {
+    height: 20vh;
+    width: 100%;
+    border:0.2vh solid rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    box-shadow: $boxShadow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modalidadeContainer {
+    height: 100%;
+    width: 25%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1vh;
+    transition: 0.3s;
+}
+
+.modalidadeContainer:hover {
+    background-color: $blackColor;
+    color: $orangeColor;
+    height: 110%;
+    width: 27%;
+    box-shadow: $boxShadow;
+}
+  
+
+.hrModalidade {
+    height: 60%;
+    border-left: 0.2vh solid rgba(0, 0, 0, 0.5);
+    border-right: transparent;
+    border-top: transparent;
+    margin: -.2vh;
+}
+
+.h3modalidade,
+.pModalidade {
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    text-align: center;
+}
+
+.h3modalidade  {
+    font-weight: 500;
+}
+
+/*início seção de módulos */
+.setionModulos{
+    height: 120vh;
+    padding: 0 10%;
+    background-color: $blackColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3vh;
+}
+
+.h2Modulo {
+    font-weight: 600;
+    color: $offWhiteColor;
+    text-shadow: $boxShadow;
+    display: list-item;
+    list-style-position: inside;
+    counter-increment: heading-counter;
+}
+
+.h2Modulo::marker {
+    content: "#" counter(heading-counter) " MÓDULO: ";
+    color: $orangeColor;
+    font-weight: bold;
+}
+
+.hrModulo {
+    border-top: 0.2vh solid $orangeColor;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.pModulo {
+    font-weight: 400;
+    color: $offWhiteColor;
+}

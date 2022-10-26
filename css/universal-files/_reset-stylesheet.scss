@@ -1,14 +1,15 @@
 @import url('http://fonts.cdnfonts.com/css/barlow');
 
 $pinkColor: #E54190;
-$greenColor: #96d9d5;
+$darkPink: #99004a;
+$greenColor: #00D4C8;
 $orangeColor: #FE9434;
 $offWhiteColor: #F5F5F5;
 $blackColor: #000000;
 $darkGrey: #303030;
 $midiumGrey: #696969;
 $offWhiteDarker: #DADBDD;
-$blackTransparent:rgba(0, 0, 0, 0.5);
+$blackTransparent:rgba(0, 0, 0, 0.7);
 $boxShadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 $boxShadowPink: rgba(229, 65, 144, 0.35) 0px 5px 15px;
 
@@ -29,6 +30,7 @@ body {
     padding: 0;
     font-family: 'Barlow', sans-serif;
     background-color: $offWhiteColor;
+    counter-reset: heading-counter;
 }
 
 //tamanho da logo

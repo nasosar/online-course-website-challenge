@@ -45,3 +45,4 @@ O site simula uma página de escola de cursos online, contendo diferentes elemen
 - Imagem do card "Grupos de estudo": Canva Studio
 - Imagem do card "Mentorias individuais": Nappy
 - Imagens dos cards "Avaliações": Andrea Piacquadio
+- Descrição curso UX/UI design: https://inovacaobrain.com.br/ux-e-ui-design/
