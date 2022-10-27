@@ -17,6 +17,9 @@ header {
     a {
         color: $offWhiteColor;
     }
+    @media (max-width: 1100px){
+        display: none;
+    }
 }
 
 //edita a linha divisória horizontal

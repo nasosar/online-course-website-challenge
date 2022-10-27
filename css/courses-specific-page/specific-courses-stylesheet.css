@@ -122,6 +122,11 @@ header .logo {
 header a {
   color: #F5F5F5;
 }
+@media (max-width: 1100px) {
+  header {
+    display: none;
+  }
+}
 
 hr.solid {
   width: 100%;
@@ -427,7 +432,7 @@ footer {
   cursor: pointer;
 }
 
-button:hover {
+.btnDescricao:hover {
   background-color: #000000;
   color: #FE9434;
   font-size: 2vh;
@@ -471,6 +476,7 @@ button:hover {
 }
 
 .modalidadeContainer:hover {
+  margin: 0 -0.2vh 0 -0.2vh;
   background-color: #000000;
   color: #FE9434;
   height: 110%;
@@ -500,7 +506,7 @@ button:hover {
 
 /*início seção de módulos */
 .setionModulos {
-  height: 120vh;
+  height: 130vh;
   padding: 0 10%;
   background-color: #000000;
   display: flex;
@@ -534,4 +540,68 @@ button:hover {
 .pModulo {
   font-weight: 400;
   color: #F5F5F5;
+}
+
+/*início da seção pagamentos */
+.sectionPagamentos {
+  height: 50vh;
+  padding: 0 10%;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.h2Pagamentos {
+  color: #FE9434;
+  font-weight: 600;
+  margin: 0;
+}
+
+.h3pagamentos {
+  color: #F5F5F5;
+  font-weight: 400;
+  margin: 0;
+}
+
+.containerPagamentos {
+  display: flex;
+  justify-content: space-between;
+  gap: 3vh;
+  margin-top: 2vh;
+}
+
+.cardPagamento {
+  width: 40vh;
+}
+
+.h3cardPag {
+  color: #F5F5F5;
+  font-weight: 500;
+}
+
+.pCardPag {
+  color: #DADBDD;
+}
+
+.btnPagamentos {
+  width: 25vh;
+  height: 5.5vh;
+  font-weight: bold;
+  color: #000000;
+  background-color: #FE9434;
+  transition: 0.3s;
+  border: 0;
+  border-radius: 4px;
+  font-size: 1.8vh;
+  cursor: pointer;
+}
+
+/* inicio da divsória entre a página e footer */
+.sectionDivider {
+  height: 0.5vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #F5F5F5;
 }/*# sourceMappingURL=specific-courses-stylesheet.css.map */

@@ -122,6 +122,11 @@ header .logo {
 header a {
   color: #F5F5F5;
 }
+@media (max-width: 1100px) {
+  header {
+    display: none;
+  }
+}
 
 hr.solid {
   width: 100%;
@@ -619,9 +624,18 @@ section#action button:hover {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   gap: 2vh;
 }
 
+/*
+#avalD {
+    align-self: left;
+}
+
+#avalA {
+    margin-left: auto;
+} */
 .avalimg {
   -o-object-fit: cover;
      object-fit: cover;

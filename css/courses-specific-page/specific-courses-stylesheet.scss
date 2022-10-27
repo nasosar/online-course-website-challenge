@@ -47,7 +47,7 @@
     cursor: pointer;
 }
 
-button:hover {
+.btnDescricao:hover {
     background-color: $blackColor;
     color: $orangeColor;
     font-size: 2vh;
@@ -92,6 +92,7 @@ button:hover {
 }
 
 .modalidadeContainer:hover {
+    margin: 0 -.2vh 0 -.2vh;
     background-color: $blackColor;
     color: $orangeColor;
     height: 110%;
@@ -122,7 +123,7 @@ button:hover {
 
 /*início seção de módulos */
 .setionModulos{
-    height: 120vh;
+    height: 130vh;
     padding: 0 10%;
     background-color: $blackColor;
     display: flex;
@@ -156,4 +157,69 @@ button:hover {
 .pModulo {
     font-weight: 400;
     color: $offWhiteColor;
+}
+
+/*início da seção pagamentos */
+.sectionPagamentos {
+    height: 50vh;
+    padding: 0 10%;
+    background-color: $blackColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.h2Pagamentos {
+    color: $orangeColor;
+    font-weight: 600;
+    margin: 0;
+}
+
+.h3pagamentos {
+    color: $offWhiteColor;
+    font-weight: 400;
+    margin: 0;
+}
+
+.containerPagamentos {
+    display: flex;
+    justify-content: space-between;
+    gap: 3vh;
+    margin-top: 2vh;
+}
+
+.cardPagamento {
+    width: 40vh;
+}
+
+.h3cardPag {
+    color: $offWhiteColor;
+    font-weight: 500;
+}
+
+.pCardPag {
+    color: $offWhiteDarker;
+}
+
+.btnPagamentos {
+    width: 25vh;
+    height: 5.5vh;
+    font-weight: bold;
+    color: $blackColor;
+    background-color: $orangeColor;
+    transition: 0.3s;
+    border: 0;
+    border-radius: 4px;
+    font-size: 1.8vh;
+    cursor: pointer;
+}
+
+/* inicio da divsória entre a página e footer */
+
+.sectionDivider {
+    height: 0.5vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: $offWhiteColor;
 }

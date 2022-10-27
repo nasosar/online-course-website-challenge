@@ -236,9 +236,18 @@ section#action {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     gap: 2vh;
 }
+ 
+/*
+#avalD {
+    align-self: left;
+}
 
+#avalA {
+    margin-left: auto;
+} */
 
 .avalimg {
     object-fit: cover;
@@ -271,3 +280,4 @@ section#action {
     color: $offWhiteColor;
     font-weight: 400;
 }
+
