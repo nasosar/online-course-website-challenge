@@ -2,36 +2,62 @@
 @import "../universal-files/header";
 @import "../universal-files/footer";
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
 /*início da estilização da seção de descrição do curso */
 .sectionDescricao {
-    height: 50vh;
-    padding: 2% 10% 0 10%;
+    min-height: 55vh;
+    max-width: 100%;
+    padding: 5% 10% 0 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 5vw;
+    gap: 5vh;
+    flex-wrap: wrap;
+    /*display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "container video";
+    grid-gap: 5vh;
+    align-items: center;*/
+    
 }
 
 .containerDescricao {
-    width: 55vh;
+    margin: 0;
+    padding: 0;
+    width: 42%;
+    max-width: 500px;
+    min-width: 300px;
+    min-height: 32vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 1.5vh;
+
+    grid-area: container;
 }
 
 .h1tituloUXUi {
     color: $orangeColor;
     text-shadow: rgba(0, 0, 0, 0.18) 0px 5px 10px;
-    margin: 0;
+    margin: -1.5vh 0 0 0;
     font-weight: 700;
     font-size: 7vh;
+
+    grid-area: titulo;
 
 }
 
 .pDescricao {
     margin: 0;
     font-weight: 400;
+    font-size: 1.8vh;
     text-align: left;
+
+    grid-area: texto;
 }
 
 .btnDescricao {
@@ -45,6 +71,8 @@
     border-radius: 4px;
     font-size: 1.8vh;
     cursor: pointer;
+
+    grid-area: botao;
 }
 
 .btnDescricao:hover {
@@ -58,7 +86,11 @@
 .videoContainer {
     iframe {
         border-radius: 8px;
+        height: 32vh;
+        width: 56.89vh;
     }
+    
+    grid-area: video;
 }
 
 /*início da seção de modalidades de curso*/
@@ -132,6 +164,11 @@
     gap: 3vh;
 }
 
+.containerModulo {
+    max-width: 100%;
+    min-width: 800px;
+}
+
 .h2Modulo {
     font-weight: 600;
     color: $offWhiteColor;
@@ -190,6 +227,7 @@
 
 .cardPagamento {
     width: 40vh;
+    min-width: 200px;
 }
 
 .h3cardPag {
@@ -212,6 +250,13 @@
     border-radius: 4px;
     font-size: 1.8vh;
     cursor: pointer;
+}
+
+.btnPagamentos:hover {
+    background-color: transparent;
+    border: 1px solid $orangeColor;
+    color: $orangeColor;
+    font-size: 2vh;
 }
 
 /* inicio da divsória entre a página e footer */
