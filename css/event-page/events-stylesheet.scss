@@ -1,3 +1,222 @@
 @import "../universal-files/reset-stylesheet";
 @import "../universal-files/header";
 @import "../universal-files/footer";
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-120%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* seção do título */
+.sectionTitulo{
+    height: 50vh;
+    width: auto;
+    padding: 0 10%;
+    margin: 0;
+    background-image: url(../../img/event-page/event-background-2.png);
+    background-repeat: no-repeat;
+    background-position-y: 40%;
+    background-size: 100%;
+    @include flexCenter (column);
+}
+
+.pTitulo {
+    text-align: center;
+    color: $offWhiteColor;
+    width: 42vh;
+    font-weight: 400;
+    margin: 0;
+}
+
+.h1Titulo {
+    color: $offWhiteColor;
+    margin: 0;
+    font-weight: 700;
+    text-shadow: $boxShadow;
+    font-size: 7vh;
+}
+
+#fadetitles {
+    animation: fade-in 0.8s ease-in;
+}
+
+/* seção tipos de eventos */
+
+.sectionTiposEventos {
+    height: 50vh;
+    padding: 0% 10%;
+    @include flexCenter (row);
+    gap: 6vh;
+}
+
+.cardEventos {
+    height: 30vh;
+    width: 30vh;
+    padding: 2%;
+    border-radius: 8px;
+    box-shadow: $boxShadow;
+    color: $offWhiteColor;
+    @include flexCenter (column);
+    gap: 1vh;
+}
+
+.cardEventos.palestra {
+    background-color: $pinkColor;
+}
+
+.cardEventos.seminario {
+    background-color: $orangeColor;
+}
+
+.cardEventos.workshop {
+    background-color: $greenColor;
+}
+
+.imgEventos {
+    height: 15vh;
+    width: 15vh;
+    background-color: transparent;
+}
+
+.h2Eventos {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+}
+
+.pEventos {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* início da seção de eventos */
+
+.sectionEventos {
+    height: 125vh;
+    padding: 5% 10%;
+    background-color: $midiumGrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 4vh;
+}
+
+.h2Eventos {
+    margin: 0;
+    color: $offWhiteColor;
+    font-weight: 700;
+    font-size: 4vh;
+    text-shadow: $boxShadow;;
+}
+
+.containerEvento {
+    height: 13vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vh;
+}
+
+.divData {
+    height: 100%;
+    min-width: 13vh;
+    color: $offWhiteColor;
+    border-radius: 6px;
+    box-shadow: $boxShadow;
+    @include flexCenter (column);
+}
+
+#dataPalestra {
+    background-color: $pinkColor;
+}
+
+#dataSeminario{
+    background-color: $orangeColor;
+}
+
+#dataWorkshop {
+    background-color: $greenColor;
+}
+
+.h3dia {
+    margin: 0;
+    font-weight: 500;
+    font-size: 5vh;
+}
+
+.pMes, .pHorário {
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.5vh;
+}
+
+.pMes {
+    margin-top: 0.5vh;
+}
+
+.divDescricao {
+    padding: 1vh 0;
+    max-width: 70%;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: $offWhiteColor;
+}
+
+.h3Descricao {
+    font-weight: 600;
+}
+
+.pDescricao {
+    font-weight: 400;
+}
+
+.btnEvento {
+    align-self: flex-end;
+    width: 22vh;
+
+    font-weight: 600;
+    background-color: transparent;
+    padding: 0.5vh;
+    border-radius: 6px;
+    cursor: pointer;
+    color: $offWhiteColor;
+    border: .3vh solid $offWhiteColor;
+}
+    
+
+
+#bntPalestra:hover {
+    color: $offWhiteColor;
+    background-color: $pinkColor;
+    border: .3vh solid $pinkColor;
+    font-size: 1.6vh;
+}
+
+#bntSeminario:hover {
+    color: $offWhiteColor;
+    background-color: $orangeColor;
+    border: .3vh solid $orangeColor;
+    font-size: 1.6vh;
+}
+
+#bntWorkshop:hover {
+    color: $offWhiteColor;
+    background-color: $greenColor;
+    border: .3vh solid $greenColor;
+    font-size: 1.6vh;
+}

@@ -211,7 +211,7 @@ hr.hrmenu {
 }
 
 .submenu:hover {
-  color: #00D4C8;
+  color: #00b3aa;
   position: static;
 }
 .submenu:hover .cursoslist {
@@ -230,7 +230,7 @@ hr.hrmenu {
   transition: all 0.5s ease 0s;
 }
 .submenu:hover .cursoslist .listitems a:hover {
-  color: #00D4C8;
+  color: #00b3aa;
 }
 
 .mainmenulink {
@@ -240,11 +240,11 @@ hr.hrmenu {
 }
 
 .mainmenulink:hover {
-  color: #00D4C8;
+  color: #00b3aa;
 }
 
 .signlink:hover {
-  color: #00D4C8;
+  color: #00b3aa;
 }
 
 /*body::-webkit-scrollbar {
@@ -384,7 +384,7 @@ footer {
 }
 
 .linksListaA:hover {
-  color: #00D4C8;
+  color: #00b3aa;
 }
 
 .itemsListaB {

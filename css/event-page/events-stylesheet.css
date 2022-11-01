@@ -211,7 +211,7 @@ hr.hrmenu {
 }
 
 .submenu:hover {
-  color: #00D4C8;
+  color: #00b3aa;
   position: static;
 }
 .submenu:hover .cursoslist {
@@ -230,7 +230,7 @@ hr.hrmenu {
   transition: all 0.5s ease 0s;
 }
 .submenu:hover .cursoslist .listitems a:hover {
-  color: #00D4C8;
+  color: #00b3aa;
 }
 
 .mainmenulink {
@@ -240,11 +240,11 @@ hr.hrmenu {
 }
 
 .mainmenulink:hover {
-  color: #00D4C8;
+  color: #00b3aa;
 }
 
 .signlink:hover {
-  color: #00D4C8;
+  color: #00b3aa;
 }
 
 /*body::-webkit-scrollbar {
@@ -384,7 +384,7 @@ footer {
 }
 
 .linksListaA:hover {
-  color: #00D4C8;
+  color: #00b3aa;
 }
 
 .itemsListaB {
@@ -437,4 +437,240 @@ footer {
 
 .listCtexto, .useremailbtn, .labelemail, #useremail {
   margin: 0;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-120%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-120%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* seção do título */
+.sectionTitulo {
+  height: 50vh;
+  width: auto;
+  padding: 0 10%;
+  margin: 0;
+  background-image: url(../../img/event-page/event-background-2.png);
+  background-repeat: no-repeat;
+  background-position-y: 40%;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pTitulo {
+  text-align: center;
+  color: #F5F5F5;
+  width: 42vh;
+  font-weight: 400;
+  margin: 0;
+}
+
+.h1Titulo {
+  color: #F5F5F5;
+  margin: 0;
+  font-weight: 700;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-size: 7vh;
+}
+
+#fadetitles {
+  -webkit-animation: fade-in 0.8s ease-in;
+          animation: fade-in 0.8s ease-in;
+}
+
+/* seção tipos de eventos */
+.sectionTiposEventos {
+  height: 50vh;
+  padding: 0% 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 6vh;
+}
+
+.cardEventos {
+  height: 30vh;
+  width: 30vh;
+  padding: 2%;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1vh;
+}
+
+.cardEventos.palestra {
+  background-color: #E54190;
+}
+
+.cardEventos.seminario {
+  background-color: #FE9434;
+}
+
+.cardEventos.workshop {
+  background-color: #00b3aa;
+}
+
+.imgEventos {
+  height: 15vh;
+  width: 15vh;
+  background-color: transparent;
+}
+
+.h2Eventos {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+}
+
+.pEventos {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* início da seção de eventos */
+.sectionEventos {
+  height: 125vh;
+  padding: 5% 10%;
+  background-color: #bbbbbb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 4vh;
+}
+
+.h2Eventos {
+  margin: 0;
+  color: #F5F5F5;
+  font-weight: 700;
+  font-size: 4vh;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.containerEvento {
+  height: 13vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2vh;
+}
+
+.divData {
+  height: 100%;
+  min-width: 13vh;
+  color: #F5F5F5;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#dataPalestra {
+  background-color: #E54190;
+}
+
+#dataSeminario {
+  background-color: #FE9434;
+}
+
+#dataWorkshop {
+  background-color: #00b3aa;
+}
+
+.h3dia {
+  margin: 0;
+  font-weight: 500;
+  font-size: 5vh;
+}
+
+.pMes, .pHorário {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.5vh;
+}
+
+.pMes {
+  margin-top: 0.5vh;
+}
+
+.divDescricao {
+  padding: 1vh 0;
+  max-width: 70%;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #F5F5F5;
+}
+
+.h3Descricao {
+  font-weight: 600;
+}
+
+.pDescricao {
+  font-weight: 400;
+}
+
+.btnEvento {
+  align-self: flex-end;
+  width: 22vh;
+  font-weight: 600;
+  background-color: transparent;
+  padding: 0.5vh;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #F5F5F5;
+  border: 0.3vh solid #F5F5F5;
+}
+
+#bntPalestra:hover {
+  color: #F5F5F5;
+  background-color: #E54190;
+  border: 0.3vh solid #E54190;
+  font-size: 1.6vh;
+}
+
+#bntSeminario:hover {
+  color: #F5F5F5;
+  background-color: #FE9434;
+  border: 0.3vh solid #FE9434;
+  font-size: 1.6vh;
+}
+
+#bntWorkshop:hover {
+  color: #F5F5F5;
+  background-color: #00b3aa;
+  border: 0.3vh solid #00b3aa;
+  font-size: 1.6vh;
 }/*# sourceMappingURL=events-stylesheet.css.map */
