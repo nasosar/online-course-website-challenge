@@ -4,7 +4,7 @@
 
 /* início da estilização do call to action, abaixo do menu nav */
 section#action {
-    height: 50vh;
+    height: 70vh;
     width: auto;
     padding: 0 10%;
     background-image: url(../../img/landing-page/background-2.png);
@@ -12,6 +12,18 @@ section#action {
     background-position: center;
     background-size: 100%;
     @include flexCenter (column);
+
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+            transform: translateY(-120%);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
 
     h1 {
         color: $offWhiteColor;
@@ -26,6 +38,10 @@ section#action {
         width: 42vh;
         font-weight: 400;
         margin: 0;
+    }
+
+    #fadetitles {
+        animation: fade-in 0.8s ease-in;
     }
 
     /* botão 'call to action' */
@@ -222,6 +238,7 @@ section#action {
     align-items: center;
     flex-wrap: wrap;
     gap: 5vh;
+    
 }
 
 /*cards de avaliação*/

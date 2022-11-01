@@ -1,5 +1,9 @@
 @charset "UTF-8";
 @import url("http://fonts.cdnfonts.com/css/barlow");
+/*body::-webkit-scrollbar {
+    width: 10px;
+    background-color: #000000;
+}*/
 @import url("http://fonts.cdnfonts.com/css/barlow");
 @import url("http://fonts.cdnfonts.com/css/barlow");
 * {
@@ -54,6 +58,23 @@ a {
   text-decoration: none;
 }
 
+/*transição de scroll da página*/
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1.2s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/*body::-webkit-scrollbar {
+    width: 10px;
+    background-color: #000000;
+}*/
 * {
   box-sizing: border-box;
 }
@@ -104,6 +125,19 @@ p {
 a {
   font-size: 2vh;
   text-decoration: none;
+}
+
+/*transição de scroll da página*/
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1.2s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 header {
@@ -201,7 +235,7 @@ hr.hrmenu {
 
 .mainmenulink {
   text-decoration: none;
-  transition: all 0.5s ease 0s;
+  transition: all 0.5s;
   background-color: transparent;
 }
 
@@ -213,6 +247,10 @@ hr.hrmenu {
   color: #00D4C8;
 }
 
+/*body::-webkit-scrollbar {
+    width: 10px;
+    background-color: #000000;
+}*/
 * {
   box-sizing: border-box;
 }
@@ -263,6 +301,19 @@ p {
 a {
   font-size: 2vh;
   text-decoration: none;
+}
+
+/*transição de scroll da página*/
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1.2s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 footer {
@@ -390,7 +441,7 @@ footer {
 
 /* início da estilização do call to action, abaixo do menu nav */
 section#action {
-  height: 50vh;
+  height: 70vh;
   width: auto;
   padding: 0 10%;
   background-image: url(../../img/landing-page/background-2.png);
@@ -402,6 +453,26 @@ section#action {
   align-items: center;
   justify-content: center;
   /* botão 'call to action' */
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-120%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-120%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 section#action h1 {
   color: #F5F5F5;
@@ -415,6 +486,10 @@ section#action p {
   width: 42vh;
   font-weight: 400;
   margin: 0;
+}
+section#action #fadetitles {
+  -webkit-animation: fade-in 0.8s ease-in;
+          animation: fade-in 0.8s ease-in;
 }
 section#action button {
   margin-top: 3vh;

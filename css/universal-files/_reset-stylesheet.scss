@@ -13,6 +13,11 @@ $blackTransparent:rgba(0, 0, 0, 0.7);
 $boxShadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 $boxShadowPink: rgba(229, 65, 144, 0.35) 0px 5px 15px;
 
+/*body::-webkit-scrollbar {
+    width: 10px;
+    background-color: #000000;
+}*/
+
 @mixin flexCenter($direction) {
     display: flex;
     flex-direction: $direction;
@@ -32,6 +37,7 @@ body {
     background-color: $offWhiteColor;
     counter-reset: heading-counter;
 }
+
 
 //tamanho da logo
 .logo {
@@ -71,4 +77,17 @@ p {
 a {
     font-size: 2vh;
     text-decoration: none;
-}
+} 
+
+/*transição de scroll da página*/
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1.2s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
