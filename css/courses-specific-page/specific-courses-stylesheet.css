@@ -6,6 +6,26 @@
 }*/
 @import url("http://fonts.cdnfonts.com/css/barlow");
 @import url("http://fonts.cdnfonts.com/css/barlow");
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-40%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-40%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -29,8 +49,11 @@ ul {
 }
 
 h1 {
-  font-size: 3.5vh;
-  font-weight: 500;
+  margin: 0;
+  color: #F5F5F5;
+  font-weight: 700;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-size: 7vh;
 }
 
 h2 {
@@ -48,6 +71,15 @@ h4 {
   font-weight: 500;
 }
 
+.pTitulo {
+  font-size: 2vh;
+  text-align: center;
+  color: #F5F5F5;
+  width: 42vh;
+  font-weight: 400;
+  margin: 0;
+}
+
 p {
   font-size: 2vh;
   font-weight: 300;
@@ -56,6 +88,10 @@ p {
 a {
   font-size: 2vh;
   text-decoration: none;
+}
+
+label {
+  font-size: 2vh;
 }
 
 /*transição de scroll da página*/
@@ -75,6 +111,16 @@ a {
     width: 10px;
     background-color: #000000;
 }*/
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-40%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -98,8 +144,11 @@ ul {
 }
 
 h1 {
-  font-size: 3.5vh;
-  font-weight: 500;
+  margin: 0;
+  color: #F5F5F5;
+  font-weight: 700;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-size: 7vh;
 }
 
 h2 {
@@ -117,6 +166,15 @@ h4 {
   font-weight: 500;
 }
 
+.pTitulo {
+  font-size: 2vh;
+  text-align: center;
+  color: #F5F5F5;
+  width: 42vh;
+  font-weight: 400;
+  margin: 0;
+}
+
 p {
   font-size: 2vh;
   font-weight: 300;
@@ -125,6 +183,10 @@ p {
 a {
   font-size: 2vh;
   text-decoration: none;
+}
+
+label {
+  font-size: 2vh;
 }
 
 /*transição de scroll da página*/
@@ -251,6 +313,16 @@ hr.hrmenu {
     width: 10px;
     background-color: #000000;
 }*/
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-40%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -274,8 +346,11 @@ ul {
 }
 
 h1 {
-  font-size: 3.5vh;
-  font-weight: 500;
+  margin: 0;
+  color: #F5F5F5;
+  font-weight: 700;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-size: 7vh;
 }
 
 h2 {
@@ -293,6 +368,15 @@ h4 {
   font-weight: 500;
 }
 
+.pTitulo {
+  font-size: 2vh;
+  text-align: center;
+  color: #F5F5F5;
+  width: 42vh;
+  font-weight: 400;
+  margin: 0;
+}
+
 p {
   font-size: 2vh;
   font-weight: 300;
@@ -301,6 +385,10 @@ p {
 a {
   font-size: 2vh;
   text-decoration: none;
+}
+
+label {
+  font-size: 2vh;
 }
 
 /*transição de scroll da página*/

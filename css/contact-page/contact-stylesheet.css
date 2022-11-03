@@ -533,7 +533,7 @@ footer {
   width: auto;
   padding: 0 10%;
   margin: 0;
-  background-image: url(../../img/event-page/event-background-2.png);
+  background-image: url(../../img/contact-page/contact-background.png);
   background-repeat: no-repeat;
   background-position-y: 40%;
   background-size: 100%;
@@ -548,10 +548,10 @@ footer {
           animation: fade-in 0.8s ease-in;
 }
 
-/* seção tipos de eventos */
-.sectionTiposEventos {
-  height: 70vh;
-  padding: 0% 10%;
+/* seção de tipo de contato */
+.sectionTiposContato {
+  height: 40vh;
+  padding: 0 10%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -559,177 +559,169 @@ footer {
   gap: 10vh;
 }
 
-.cardEventos {
-  height: 30vh;
-  width: 30vh;
-  padding: 2%;
+.cardContatos {
+  height: 40vh;
+  width: 40vh;
+  border: 0.2vh solid rgba(0, 0, 0, 0.5);
   border-radius: 8px;
+  padding: 3%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  color: #F5F5F5;
+  background-color: #F5F5F5;
+  margin: -15vh 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.divTituloContato {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1vh;
-}
-
-.cardEventos.palestra {
-  background-color: #E54190;
-}
-
-.cardEventos.seminario {
-  background-color: #FE9434;
-}
-
-.sectionDivider {
-  height: 0.5vh;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  background-color: #F5F5F5;
-}
-
-.cardEventos.workshop {
-  background-color: #00b3aa;
-}
-
-.imgEventos {
-  height: 15vh;
-  width: 15vh;
-  background-color: transparent;
-}
-
-.h2Eventos {
-  margin: 0;
-  padding: 0;
-  font-weight: 600;
-}
-
-.pEventos {
-  margin: 0;
-  padding: 0;
-  font-weight: 500;
-  text-align: center;
-}
-
-/* início da seção de eventos */
-.sectionEventos {
-  height: 125vh;
-  padding: 5% 10%;
-  background-color: #000000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 4vh;
-}
-
-.h2Eventos {
-  margin: 0;
-  color: #F5F5F5;
-  font-weight: 700;
-  font-size: 4vh;
-  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.containerEvento {
-  height: 13vh;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   gap: 2vh;
 }
 
-.divData {
-  height: 100%;
-  min-width: 13vh;
-  color: #F5F5F5;
-  border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.imgContato {
+  height: 12vh;
+  width: 12vh;
+}
+
+.divDescricaoContato {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  text-align: center;
+  gap: 2vh;
 }
 
-#dataPalestra {
-  background-color: #E54190;
+.h3Telefone {
+  margin: 0;
+  cursor: pointer;
+  font-weight: 500;
 }
 
-#dataSeminario {
-  background-color: #FE9434;
+.h3Telefone:hover {
+  color: #00b3aa;
 }
 
-#dataWorkshop {
+.h2Eventos {
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.pContato {
+  margin: 0;
+}
+
+.btnChat {
+  width: 15vh;
+  height: 3vh;
+  font-weight: 600;
+  color: #F5F5F5;
   background-color: #00b3aa;
+  transition: 0.3s;
+  border: 0;
+  border-radius: 4px;
+  font-size: 1.7vh;
+  cursor: pointer;
 }
 
-.h3dia {
-  margin: 0;
-  font-weight: 500;
-  font-size: 5vh;
+.btnChat:hover {
+  background-color: #000000;
+  color: #F5F5F5;
+  font-size: 1.8vh;
+  border: 0;
 }
 
-.pMes, .pHorário {
-  margin: 0;
-  font-weight: 500;
-  font-size: 1.5vh;
-}
-
-.pMes {
-  margin-top: 0.5vh;
-}
-
-.divDescricao {
-  padding: 1vh 0;
-  max-width: 70%;
-  margin-right: auto;
+/* Inicio seção form de email */
+.sectionEmail {
+  height: 100vh;
+  padding: 5% 10%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
-  color: #F5F5F5;
 }
 
-.h3Descricao {
-  font-weight: 600;
+.articleTituloEmail {
+  width: 80%;
+  border-bottom: 0.3vh solid #00b3aa;
+  padding-bottom: 2vh;
+  margin-bottom: 3vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 1vh;
 }
 
-.pDescricao {
+.h2Email {
+  margin: 0;
+  font-weight: 500;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.labelDivEmail {
+  margin: 0;
   font-weight: 400;
 }
 
-.btnEvento {
-  align-self: flex-end;
-  width: 22vh;
+.articleEmail {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  height: 75vh;
+  width: 80%;
+}
+
+.divEmailNome, .divEmailEmail, .divEmailContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+.inputText {
+  border: 0.1vh solid #000000;
+  border-radius: 4px;
+  padding: 1vh;
+  outline: none;
+  font-family: "Barlow", sans-serif;
+  font-size: 2vh;
+}
+
+.inputText:focus {
+  border: 0.3vh solid #00b3aa;
+  border-radius: 4px;
+}
+
+.nameAndMail {
+  height: 4vh;
+}
+
+.mailcontent {
+  height: 40vh;
+  resize: none;
+}
+
+.btnEnviar {
+  width: 15vh;
+  height: 3vh;
   font-weight: 600;
-  background-color: transparent;
-  padding: 0.5vh;
-  border-radius: 6px;
-  cursor: pointer;
-  color: #F5F5F5;
-  border: 0.3vh solid #F5F5F5;
-}
-
-#bntPalestra:hover {
-  color: #F5F5F5;
-  background-color: #E54190;
-  border: 0.3vh solid #E54190;
-  font-size: 1.6vh;
-}
-
-#bntSeminario:hover {
-  color: #F5F5F5;
-  background-color: #FE9434;
-  border: 0.3vh solid #FE9434;
-  font-size: 1.6vh;
-}
-
-#bntWorkshop:hover {
   color: #F5F5F5;
   background-color: #00b3aa;
-  border: 0.3vh solid #00b3aa;
-  font-size: 1.6vh;
-}/*# sourceMappingURL=events-stylesheet.css.map */
+  transition: 0.3s;
+  border: 0;
+  border-radius: 4px;
+  font-size: 1.7vh;
+  cursor: pointer;
+}
+
+.btnEnviar:hover {
+  background-color: #000000;
+  color: #F5F5F5;
+  font-size: 1.8vh;
+  border: 0;
+}/*# sourceMappingURL=contact-stylesheet.css.map */

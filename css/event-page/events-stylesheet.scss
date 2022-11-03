@@ -2,21 +2,10 @@
 @import "../universal-files/header";
 @import "../universal-files/footer";
 
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-        transform: translateY(-120%);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 /* seção do título */
 .sectionTitulo{
-    height: 50vh;
+    height: 70vh;
     width: auto;
     padding: 0 10%;
     margin: 0;
@@ -27,22 +16,6 @@
     @include flexCenter (column);
 }
 
-.pTitulo {
-    text-align: center;
-    color: $offWhiteColor;
-    width: 42vh;
-    font-weight: 400;
-    margin: 0;
-}
-
-.h1Titulo {
-    color: $offWhiteColor;
-    margin: 0;
-    font-weight: 700;
-    text-shadow: $boxShadow;
-    font-size: 7vh;
-}
-
 #fadetitles {
     animation: fade-in 0.8s ease-in;
 }
@@ -50,10 +23,10 @@
 /* seção tipos de eventos */
 
 .sectionTiposEventos {
-    height: 50vh;
+    height: 70vh;
     padding: 0% 10%;
     @include flexCenter (row);
-    gap: 6vh;
+    gap: 10vh;
 }
 
 .cardEventos {
@@ -73,6 +46,14 @@
 
 .cardEventos.seminario {
     background-color: $orangeColor;
+}
+
+.sectionDivider {
+    height: 0.5vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: $offWhiteColor;
 }
 
 .cardEventos.workshop {
@@ -103,7 +84,7 @@
 .sectionEventos {
     height: 125vh;
     padding: 5% 10%;
-    background-color: $midiumGrey;
+    background-color: $blackColor;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -18,11 +18,37 @@ $boxShadowPink: rgba(229, 65, 144, 0.35) 0px 5px 15px;
     background-color: #000000;
 }*/
 
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-40%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @mixin flexCenter($direction) {
     display: flex;
     flex-direction: $direction;
     align-items: center;
     justify-content: center;
+}
+
+@mixin flexSpacebetween($direction) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin flexSpaceevenly($direction) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 * {
@@ -50,8 +76,11 @@ ul {
 }
 
 h1 {
-    font-size: 3.5vh;
-    font-weight: 500;
+    margin: 0;
+    color: $offWhiteColor;
+    font-weight: 700;
+    text-shadow: $boxShadow;
+    font-size: 7vh;
 }
 
 h2 {
@@ -69,6 +98,15 @@ h4 {
     font-weight: 500;
 }
 
+.pTitulo {
+    font-size: 2vh;
+    text-align: center;
+    color: $offWhiteColor;
+    width: 42vh;
+    font-weight: 400;
+    margin: 0;
+}
+
 p {
     font-size: 2vh;
     font-weight: 300;
@@ -79,6 +117,9 @@ a {
     text-decoration: none;
 } 
 
+label {
+    font-size: 2vh;
+}
 /*transição de scroll da página*/
 .reveal{
     position: relative;

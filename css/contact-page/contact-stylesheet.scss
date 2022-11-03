@@ -1,0 +1,187 @@
+@import "../universal-files/reset-stylesheet";
+@import "../universal-files/header";
+@import "../universal-files/footer";
+
+/* seção do título */
+.sectionTitulo{
+    height: 70vh;
+    width: auto;
+    padding: 0 10%;
+    margin: 0;
+    background-image: url(../../img/contact-page/contact-background.png);
+    background-repeat: no-repeat;
+    background-position-y: 40%;
+    background-size: 100%;
+    @include flexCenter (column);
+}
+
+
+#fadetitles {
+    animation: fade-in 0.8s ease-in;
+}
+
+/* seção de tipo de contato */
+
+.sectionTiposContato {
+    height: 40vh;
+    padding: 0 10%;
+    @include flexCenter (row);
+    gap: 10vh;
+}
+
+.cardContatos {
+    height: 40vh;
+    width: 40vh;
+    border:0.2vh solid rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 3%;
+    box-shadow: $boxShadow;
+    background-color: $offWhiteColor;
+    margin: -15vh 0 0 0;
+    @include flexSpacebetween(column);
+}
+
+.divTituloContato {
+    @include flexCenter (column);
+    gap: 2vh;
+}
+
+.imgContato {
+    height: 12vh;
+    width: 12vh;
+}
+
+.divDescricaoContato {
+    @include flexSpacebetween(column);
+    text-align: center;
+    gap: 2vh;
+}
+
+.h3Telefone {
+    margin: 0;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.h3Telefone:hover {
+    color: $greenColor;
+}
+
+.h2Eventos {
+    text-shadow: $boxShadow;
+    margin: 0;
+    font-weight: 500;
+}
+
+.pContato {
+    margin: 0;
+}
+
+.btnChat {
+    width: 15vh;
+    height: 3vh;
+    font-weight: 600;
+    color: $offWhiteColor;
+    background-color: $greenColor;
+    transition: 0.3s;
+    border: 0;
+    border-radius: 4px;
+    font-size: 1.7vh;
+    cursor: pointer;
+}
+
+.btnChat:hover {
+    background-color: $blackColor;
+    color: $offWhiteColor;
+    font-size: 1.8vh;
+    border: 0;
+}
+
+/* Inicio seção form de email */
+
+.sectionEmail {
+    height: 100vh;
+    padding: 5% 10%;
+    @include flexSpacebetween(column);
+}
+
+.articleTituloEmail {
+    width: 80%;
+    border-bottom: 0.3vh solid $greenColor;
+    padding-bottom: 2vh;
+    margin-bottom: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 1vh;
+}
+
+.h2Email {
+    margin: 0;
+    font-weight: 500;
+    text-shadow: $boxShadow;
+}
+
+
+.labelDivEmail {
+    margin: 0;
+    font-weight: 400;
+}
+
+.articleEmail {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    height: 75vh;
+    width: 80%;
+}
+
+.divEmailNome, .divEmailEmail ,.divEmailContent  {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.inputText {
+    border: .1vh solid $blackColor;
+    border-radius: 4px;
+    padding: 1vh;
+    outline: none;
+    font-family: 'Barlow', sans-serif;
+    font-size: 2vh;
+}
+
+.inputText:focus {
+    border: .3vh solid $greenColor;
+    border-radius: 4px;
+  }
+
+.nameAndMail {
+    height: 4vh;
+}
+
+.mailcontent {
+    height: 40vh;
+    resize: none;
+}
+
+.btnEnviar {
+    width: 15vh;
+    height: 3vh;
+    font-weight: 600;
+    color: $offWhiteColor;
+    background-color: $greenColor;
+    transition: 0.3s;
+    border: 0;
+    border-radius: 4px;
+    font-size: 1.7vh;
+    cursor: pointer;
+}
+
+.btnEnviar:hover {
+    background-color: $blackColor;
+    color: $offWhiteColor;
+    font-size: 1.8vh;
+    border: 0;
+}
