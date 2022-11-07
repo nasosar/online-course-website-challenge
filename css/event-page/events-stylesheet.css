@@ -202,7 +202,11 @@ label {
   opacity: 1;
 }
 
-header {
+.headerMobile {
+  display: none;
+}
+
+.headercontainer {
   height: 15vh;
   width: 100vw;
   margin: 0;
@@ -212,16 +216,11 @@ header {
   justify-content: center;
   background-color: #000000;
 }
-header .logo {
+.headercontainer .logo {
   margin-top: 1vh;
 }
-header a {
+.headercontainer a {
   color: #F5F5F5;
-}
-@media (max-width: 1100px) {
-  header {
-    display: none;
-  }
 }
 
 hr.solid {
@@ -309,6 +308,90 @@ hr.hrmenu {
   color: #00b3aa;
 }
 
+/* incicio da estilização para mobile */
+@media only screen and (max-width: 850px) {
+  .headercontainer {
+    display: none;
+  }
+  .headerMobile {
+    height: 60px;
+    width: 100%;
+    background-color: #000000;
+    display: block;
+    display: flex;
+    align-items: center;
+    /*@include flexSpacebetween(row);*/
+  }
+  .logomobile {
+    height: 55px;
+    width: auto;
+    position: absolute;
+    left: 10px;
+  }
+  .menuicon {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 3px;
+    background-color: #F5F5F5;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+  /* animaçao barras do menu */
+  .change .bar1 {
+    transform: translate(0, 13px) rotate(-45deg);
+  }
+  .change .bar2 {
+    opacity: 0;
+  }
+  .change .bar3 {
+    transform: translate(0, -13px) rotate(45deg);
+  }
+  /*lista de links no menu mobile escondido*/
+  .mobilelist {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    top: 55px;
+    background-color: #303030;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobilelinks {
+    width: 100%;
+    font-size: 2vh;
+    margin: 0;
+    padding: 4%;
+    background-color: #303030;
+  }
+  a {
+    color: #F5F5F5;
+    padding: 2% 80% 2% 5%;
+  }
+  a:active {
+    color: #E54190;
+  }
+  a[tabindex]:focus {
+    color: #E54190;
+    outline: none;
+  }
+  li:active {
+    background-color: #000000;
+  }
+  li[tabindex]:focus {
+    background-color: #000000;
+  }
+}
 /*body::-webkit-scrollbar {
     width: 10px;
     background-color: #000000;

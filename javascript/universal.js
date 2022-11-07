@@ -18,3 +18,8 @@ function reveal() {
   }
   
   window.addEventListener("scroll", reveal);
+
+  /*animação click do ícone do menu mobile*/
+  function menuIconClick(x) {
+    x.classList.toggle("change");
+  }
