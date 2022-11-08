@@ -314,8 +314,9 @@ hr.hrmenu {
     display: none;
   }
   .headerMobile {
-    height: 60px;
+    height: 7vh;
     width: 100%;
+    margin: 0;
     background-color: #000000;
     display: block;
     display: flex;
@@ -323,14 +324,14 @@ hr.hrmenu {
     /*@include flexSpacebetween(row);*/
   }
   .logomobile {
-    height: 55px;
+    height: 6.8vh;
     width: auto;
     position: absolute;
-    left: 10px;
+    left: 1vh;
   }
   .menuicon {
     position: absolute;
-    right: 10px;
+    right: 1vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -358,33 +359,56 @@ hr.hrmenu {
   .mobilelist {
     margin: 0;
     padding: 0;
+    opacity: 0;
     width: 100%;
     position: absolute;
-    top: 55px;
+    top: 7vh;
     background-color: #303030;
+    transition: opacity 0.5s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+  /*classe para revelar menu na funçao*/
+  .mobilelistactive {
+    opacity: 1;
+  }
   .mobilelinks {
     width: 100%;
     font-size: 2vh;
+    font-weight: 400;
     margin: 0;
     padding: 4%;
     background-color: #303030;
   }
+  .cursoBlack {
+    background-color: #000000;
+  }
+  .cursoBlack a {
+    color: #E54190;
+  }
   a {
     color: #F5F5F5;
-    padding: 2% 80% 2% 5%;
+    padding: 2% 65% 2% 5%;
   }
   a:active {
     color: #E54190;
   }
   a[tabindex]:focus {
     color: #E54190;
-    outline: none;
   }
+  /*classes para exibir e ocultar os cursos específicos*/
+  .subcurso {
+    display: none;
+  }
+  .sublinkActive {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  /* torna o fundo do link preto quando clicado */
   li:active {
     background-color: #000000;
   }
