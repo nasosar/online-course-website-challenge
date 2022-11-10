@@ -116,7 +116,7 @@ hr.solid {
 
 
 
-/* incicio da estilização para mobile */
+/* MOBILE*/
 
 @media only screen and (max-width: 850px){
 
@@ -125,7 +125,7 @@ hr.solid {
     }
 
     .headerMobile {
-        height: 7vh;
+        height: 65px;
         width: 100%;
         margin: 0;
         background-color: $blackColor;
@@ -136,7 +136,7 @@ hr.solid {
     }
 
     .logomobile {
-        height: 6.8vh;
+        height: 60px;
         width: auto;
         position: absolute;
         left: 1vh;
@@ -175,9 +175,9 @@ hr.solid {
         opacity: 0;
         width: 100%;
         position: absolute;
-        top: 7vh;
+        top: 65px;
         background-color: $darkGrey;
-        transition: opacity .5s ease;
+        transition: .5s ease;
         @include flexCenter (column);
     }
 
@@ -189,8 +189,6 @@ hr.solid {
 
     .mobilelinks {
         width: 100%;
-        font-size: 2vh;
-        font-weight: 400;
         margin: 0;
         padding: 4%;
         background-color: $darkGrey;        
@@ -201,16 +199,19 @@ hr.solid {
         a {color: $pinkColor;}
     }
 
-    a {
+    .a-mobile {
+        margin: 0;
+        font-size: 2.5vh;
+        font-weight: 400;
         color: $offWhiteColor;
         padding: 2% 65% 2% 5%;
     }
 
-    a:active {
+    .a-mobile:active {
         color: $pinkColor;
     }
     
-    a[tabindex]:focus {
+    .a-mobile[tabindex]:focus {
         color:$pinkColor;
     }
 

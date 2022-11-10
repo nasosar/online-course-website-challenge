@@ -185,3 +185,76 @@
     font-size: 1.8vh;
     border: 0;
 }
+
+/* MOBILE*/
+
+@media only screen and (max-width: 850px) {
+    /*seção do titulo*/
+    .sectionTitulo{
+        height: 250px;
+        width: 100%;
+        padding: 10% 5%;
+        margin: 0;
+        @include flexCenter (column);
+    }
+    
+    .pTitulo {
+        font-size: 3vh;
+        font-weight: 400;
+    }
+
+    .h1Titulo {
+        font-size: 5.5vh;
+        text-align: center;
+    }
+
+    /*seção dos cards de contato*/
+    .sectionTiposContato {
+        height: 100vh;
+        width: 100%;
+        @include flexCenter (column);
+    }
+
+    .cardContatos {
+        margin: 0;
+        height: 35vh;
+        width: 35vh;
+    }
+
+    .h2Eventos {
+        font-size: 3vh;
+    }
+
+    .pContato {
+        font-size: 2.5vh;
+    }
+
+    .h3Telefone {
+        a {
+            font-size: 2.7vh;
+        }
+    }
+
+    .btnChat {
+        font-size: 2.5vh;
+        width: auto;
+    }
+
+    /*seção do email*/
+    .sectionEmail{
+        padding: 10% 5%;
+    }
+
+    .h2Email {
+        font-size: 3vh;
+    }
+
+    .labelDivEmail {
+        font-size: 2.5vh;
+    }
+
+    .btnEnviar {
+        font-size: 2.5vh;
+        font-weight: 600;
+    }
+}

@@ -1,6 +1,5 @@
 
 /*animação do scroll*/
-
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
   

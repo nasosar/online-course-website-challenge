@@ -107,6 +107,18 @@ label {
   opacity: 1;
 }
 
+/*transição de scroll da página mobile
+.revealmobile{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1.2s all ease;
+  }
+
+  .revealmobile.active{
+    transform: translateY(0);
+    opacity: 1;
+  }*/
 /*body::-webkit-scrollbar {
     width: 10px;
     background-color: #000000;
@@ -202,6 +214,18 @@ label {
   opacity: 1;
 }
 
+/*transição de scroll da página mobile
+.revealmobile{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1.2s all ease;
+  }
+
+  .revealmobile.active{
+    transform: translateY(0);
+    opacity: 1;
+  }*/
 .headerMobile {
   display: none;
 }
@@ -308,13 +332,13 @@ hr.hrmenu {
   color: #00b3aa;
 }
 
-/* incicio da estilização para mobile */
+/* MOBILE*/
 @media only screen and (max-width: 850px) {
   .headercontainer {
     display: none;
   }
   .headerMobile {
-    height: 7vh;
+    height: 65px;
     width: 100%;
     margin: 0;
     background-color: #000000;
@@ -324,7 +348,7 @@ hr.hrmenu {
     /*@include flexSpacebetween(row);*/
   }
   .logomobile {
-    height: 6.8vh;
+    height: 60px;
     width: auto;
     position: absolute;
     left: 1vh;
@@ -362,9 +386,9 @@ hr.hrmenu {
     opacity: 0;
     width: 100%;
     position: absolute;
-    top: 7vh;
+    top: 65px;
     background-color: #303030;
-    transition: opacity 0.5s ease;
+    transition: 0.5s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -376,8 +400,6 @@ hr.hrmenu {
   }
   .mobilelinks {
     width: 100%;
-    font-size: 2vh;
-    font-weight: 400;
     margin: 0;
     padding: 4%;
     background-color: #303030;
@@ -388,14 +410,17 @@ hr.hrmenu {
   .cursoBlack a {
     color: #E54190;
   }
-  a {
+  .a-mobile {
+    margin: 0;
+    font-size: 2.5vh;
+    font-weight: 400;
     color: #F5F5F5;
     padding: 2% 65% 2% 5%;
   }
-  a:active {
+  .a-mobile:active {
     color: #E54190;
   }
-  a[tabindex]:focus {
+  .a-mobile[tabindex]:focus {
     color: #E54190;
   }
   /*classes para exibir e ocultar os cursos específicos*/
@@ -511,6 +536,18 @@ label {
   opacity: 1;
 }
 
+/*transição de scroll da página mobile
+.revealmobile{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1.2s all ease;
+  }
+
+  .revealmobile.active{
+    transform: translateY(0);
+    opacity: 1;
+  }*/
 footer {
   height: 28vh;
   padding: 0 10%;
@@ -546,8 +583,22 @@ footer {
   align-self: start;
 }
 .socials .socialicon {
-  width: 2.5vh;
-  height: auto;
+  width: auto;
+  height: 2.8vh;
+  transition: transform 0.3s ease-in-out;
+}
+.socials .socialicon:hover {
+  transform: scale(1.2);
+}
+
+.fa-github {
+  color: #F5F5F5;
+  font-size: 2.8vh;
+  transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+  transform: rotate(360deg) scale(1.2);
 }
 
 .listcontainerAB {
@@ -634,6 +685,54 @@ footer {
   margin: 0;
 }
 
+/* MOBILE*/
+@media only screen and (max-width: 850px) {
+  .footercontainer {
+    height: auto;
+    margin: 0;
+    padding: 0 5% 5% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .logo, .logomobilefooter {
+    height: 6.8vh;
+    width: auto;
+    margin: 0 0 0 -3%;
+  }
+  .footerdescricao, .linksListaA, .itemsListaB, .listCtexto, .labelemail {
+    font-size: 2.5vh;
+    font-weight: 400;
+  }
+  .socials {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+  a, .a-icon {
+    padding: 0;
+  }
+  .socialicon {
+    margin: 0;
+  }
+  .listcontainerAB {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .h4titulos, .listCtitulo {
+    font-size: 3vh;
+  }
+  .inputandbtn {
+    height: 3vh;
+    width: 100%;
+  }
+  .useremailbtn {
+    width: auto;
+    font-size: 2.2vh;
+  }
+}
 @-webkit-keyframes left-to-right {
   0% {
     opacity: 0;
@@ -644,7 +743,6 @@ footer {
     transform: translateX(0);
   }
 }
-
 @keyframes left-to-right {
   0% {
     opacity: 0;

@@ -30,12 +30,28 @@ footer {
 .socials {
     @include flexCenter (row);
     gap: 2vh;
+    align-self: start;    
+    
     .socialicon {
-        width: 2.5vh;
-        height: auto;
+        width: auto;
+        height: 2.8vh;
+        transition: transform 0.3s ease-in-out;
     }
-    align-self: start;
+
+    .socialicon:hover {
+        transform: scale(1.2);
+    }
 }
+
+.fa-github {
+    color: $offWhiteColor;
+    font-size: 2.8vh;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
+  }
 
 .listcontainerAB {
     margin-top: 2.5vh;
@@ -123,4 +139,62 @@ footer {
 }
 
 
+/* MOBILE*/
 
+@media only screen and (max-width: 850px) {
+    .footercontainer {
+        height: auto;
+        margin: 0;
+        padding: 0 5% 5% 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .logo, .logomobilefooter {
+        height: 6.8vh;
+        width: auto;
+        margin: 0 0 0 -3%;
+    }
+
+    .footerdescricao, .linksListaA, .itemsListaB, .listCtexto, .labelemail {
+        font-size: 2.5vh;
+        font-weight: 400;
+    }
+
+    .socials {
+        display: flex;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+
+    a, .a-icon {
+        padding: 0;
+    }
+
+    .socialicon {
+        margin: 0;
+    }
+
+    .listcontainerAB {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .h4titulos, .listCtitulo {
+        font-size: 3vh;
+    }
+
+    .inputandbtn {
+        height: 3vh;
+        width: 100%;
+    }
+  
+    .useremailbtn {
+        width: auto;
+        font-size: 2.2vh;
+    }
+
+}

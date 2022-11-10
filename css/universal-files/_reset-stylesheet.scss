@@ -132,3 +132,16 @@ label {
     transform: translateY(0);
     opacity: 1;
   }
+
+  /*transição de scroll da página mobile
+.revealmobile{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1.2s all ease;
+  }
+  
+  .revealmobile.active{
+    transform: translateY(0);
+    opacity: 1;
+  }*/
