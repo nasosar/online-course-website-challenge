@@ -696,7 +696,7 @@ footer {
     justify-content: space-evenly;
   }
   .logo, .logomobilefooter {
-    height: 6.8vh;
+    height: 60px;
     width: auto;
     margin: 0 0 0 -3%;
   }
