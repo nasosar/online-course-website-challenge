@@ -415,7 +415,7 @@ hr.hrmenu {
     font-size: 2.5vh;
     font-weight: 400;
     color: #F5F5F5;
-    padding: 2% 65% 2% 5%;
+    padding: 2% 60% 2% 5%;
   }
   .a-mobile:active {
     color: #E54190;
@@ -946,7 +946,7 @@ footer {
     justify-content: center;
   }
   .pTitulo {
-    font-size: 3vh;
+    font-size: 2.5vh;
     font-weight: 400;
   }
   .h1Titulo {

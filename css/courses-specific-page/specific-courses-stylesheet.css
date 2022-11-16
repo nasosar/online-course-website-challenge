@@ -415,7 +415,7 @@ hr.hrmenu {
     font-size: 2.5vh;
     font-weight: 400;
     color: #F5F5F5;
-    padding: 2% 65% 2% 5%;
+    padding: 2% 60% 2% 5%;
   }
   .a-mobile:active {
     color: #E54190;
@@ -1079,7 +1079,7 @@ body {
     gap: 3vh;
   }
   .pDescricao {
-    font-size: 3vh;
+    font-size: 2.5vh;
     font-weight: 400;
   }
   .btnDescricao {
@@ -1105,70 +1105,33 @@ body {
     height: auto;
     padding: 0;
     margin: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border: 1px solid #000000;
-    border-radius: 30px;
+    border-radius: 8px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow-y: hidden;
+    -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
   }
   .hrModalidade {
-    /*width: 80%;
-    height: 0;
-    border-top: 0.2vh solid rgba(0, 0, 0, 0.5);
-    border-right: transparent;
-    border-left:  transparent;
-    margin: -.2vh;*/
     display: none;
   }
   .modalidadeContainer {
     height: 30vh;
-    width: 70%;
-    /*border-bottom: 1px solid $blackColor;
-    border-radius: 0;*/
-  }
-  /*.containerSemBorder  {
-      border: 0;
-  }*/
-  /* TESTE DE MARGEM DIFERENTE */
-  .containerBbottom {
-    margin-left: 30%;
-    margin-bottom: -5px;
-    border-bottom: 5px solid #000000;
-    border-right: 5px solid #000000;
-    border-bottom-right-radius: 30%;
-    border-top-right-radius: 30px;
-  }
-  .containerBtopandBottomleft {
-    margin-right: 30%;
-    border-top: 5px solid #000000;
-    border-bottom: 5px solid #000000;
-    border-left: 5px solid #000000;
-    border-top-left-radius: 30%;
-    border-bottom-left-radius: 30%;
-    margin-bottom: -5px;
-  }
-  .containerBtopandBottomright {
-    margin-left: 30%;
-    border-top: 5px solid #000000;
-    border-bottom: 5px solid #000000;
-    border-right: 5px solid #000000;
-    border-top-right-radius: 30%;
-    border-bottom-right-radius: 30%;
-    margin-bottom: -5px;
-  }
-  .containerBtop {
-    margin-right: 30%;
-    border-top: 5px solid #000000;
-    border-left: 5px solid #000000;
-    border-radius: 30% 0;
-    border-bottom-left-radius: 30px;
+    width: 100%;
+    flex-shrink: 0;
+    gap: 1vh;
+    scroll-snap-align: start;
   }
   .h3modalidade {
-    font-size: 3.5vh;
+    font-size: 4vh;
+    color: #FE9434;
+    font-weight: 600;
   }
   .pModalidade {
-    font-size: 3vh;
+    font-size: 2.5vh;
     font-weight: 400;
   }
   /*seção dos módulos*/
@@ -1189,7 +1152,7 @@ body {
     font-size: 4vh;
   }
   .pModulo {
-    font-size: 3vh;
+    font-size: 2.5vh;
   }
   /*seção pagamentos*/
   .sectionPagamentos {
@@ -1210,7 +1173,7 @@ body {
     font-size: 3.5vh;
   }
   .pCardPag {
-    font-size: 3vh;
+    font-size: 2.5vh;
     font-weight: 400;
   }
   .containerPagamentos {
