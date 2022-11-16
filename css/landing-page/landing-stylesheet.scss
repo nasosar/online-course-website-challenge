@@ -95,103 +95,101 @@ section#action {
 
 /* início da estilização da seção 1 - personalize o aprendizado */
 .section1 {
-    height: 90%;
+    height: 70vh;
     width: 100%;
     padding: 5% 10%;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    gap: 3vh;
-    justify-content: space-evenly;
+    gap: 5vh;
 }
 
-.h2section1 {
+.videoContainer {
+    .frameVideo {
+        border-radius: 8px;
+        height: 36vh;
+        width: 64vh;
+    }
+}
+
+.section1descricao{
+    height: 36vh;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.h3section1 {
     color: $blackColor;
     margin: 0;
     font-weight: 600;
     text-shadow: $boxShadow;
 }
 
-/*contém todos os cards com valores */
-.containervalores {
-    height: 90%;
+.pSection1 {
+    margin: 1vh 0 0 0;
+    font-weight: 400;
+}
+
+/* inicio da seção 2 */
+.section2 {
+    height: 70vh;
     width: 100%;
-    padding: 3% 0;
-    margin: 0;
+    padding: 5% 10%;
+    background-color: $blackColor;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
     gap: 5vh;
 }
 
-/*cards de valores */
-.valores {
-    height: 35vh;
-    width: 50vh;
-    padding: 0;
-    margin: 0;
-    border-radius: 8px;
-    background-color: $offWhiteColor;
-    border: 0.1vh solid $blackColor;
-    box-shadow: $boxShadow;
+.textCombo2 {
+    max-width: 600px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 3vh;
+}
+.h2section2 {
+    color: $pinkColor;
+    margin: 0;
+    font-weight: 600;
 }
 
-.h3valores {
+.pSection2 {
     color: $offWhiteColor;
     margin: 0;
-    font-weight: 500;
+    font-weight: 400;
 }
 
-.h3holder {
-    background-color: $blackColor;
-    width: 100%;
-    height: 6vh;
-    border-radius: 6px 6px 0 0;
-    margin: 0;
-    padding-left: 5%;
-    display: flex;
-    align-items: center;
-    align-self: flex-start;
-}
-
-.descricaovalor {
-    padding: 5%;
+.btnSection2 {
+    width: 28vh;
+    height: 7vh;
+    font-weight: bold;
+    border: .3vh solid $pinkColor;
+    color: $pinkColor;
+    background-color:transparent;
+    transition: 0.3s;
     border-radius: 4px;
-    display: flex;
-    justify-content: space-between;
-    align-items: initial;
-}
-
-.listavalores {
-    color: $blackColor;
-    width: 43%;
-    margin: 0;
-    padding: 0;   
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    font-weight: 450;
     font-size: 1.8vh;
-    gap: 1vh;
+    cursor: pointer;
 }
 
-
-.imgvalores {
-    object-fit: cover;
-    width: 22vh;
-    height: 22vh;
-    border-radius: 4px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px;
+.btnSection2:hover {
+    background-color: $pinkColor;
+    color: $offWhiteColor;
+    font-size: 2vh;
 }
 
-/* início da estilização da seção 2 - avaliações */
+.imgsection2 {
+    height: 50vh;
+    width: auto;
+}
 
-.section2 {
-    height: 100vh;
+/* início da estilização da seção 3 - avaliações */
+
+.section3 {
+    height: auto;
     width: 100%;
     padding: 5% 10%;
     background-color: $pinkColor;
@@ -212,61 +210,133 @@ section#action {
 
 /*container dos cards de avaliação*/
 .avalcontainer {
-    height: 90%;
+    height: auto;
     width: 100%;
     padding: 3% 0;
     margin: 0;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
+    overflow-x: scroll;
+    white-space: nowrap;        
+    overflow-y: hidden;
     gap: 5vh;
+    scroll-snap-type: x mandatory;
     
 }
 
-/*cards de avaliação*/
+
+.cardAvaliacao {
+    height: 46vh;
+    width: 38vh;
+    margin: 0;
+    padding: 1.5vh;
+    border: 0.2vh solid $offWhiteColor;
+    border-radius: 8px;
+    box-shadow:  rgba(245, 245, 245, 0.5) 0px 5px 15px;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.cabecalhoCardAvaliacao {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tituloEestrelasCabecalho {
+    display: flex;
+    flex-direction: column;
+    gap: .5vh;
+}
+.h3nomealuno, .pDescricaoAvaliacao {
+    margin: 0;
+    color: $offWhiteColor;
+}
+
+.h3nomealuno {
+    font-weight: 600;
+}
+
+.pDescricaoAvaliacao {
+    font-weight: 400;
+    white-space: normal;
+}
+
+.checked {
+    color: $orangeColor;
+    text-shadow: $boxShadow;
+}
+
+.unchecked {
+    color: rgba(245, 245, 245, 0.5);
+    text-shadow: $boxShadow;
+}
+
+.imgAvaliacao {
+    object-fit: cover;
+    width: 11vh;
+    height: 11vh;
+    box-shadow:  rgba(245, 245, 245, 0.5) 0px 5px 15px;
+    border-radius: 50%;
+}
+
+.pAvaliacao {
+    font-weight: 400;
+    color: $offWhiteColor;
+    white-space: normal;
+}
+
+
+/*cards de avaliação
 .articleaval {
-    height: 30vh;
-    width: 45vh;
-    padding: 0;
+    height: 46vh;
+    width: 38vh;
+    padding: 2vh;
     margin: 0;
     border-radius: 8px;
     background-color: transparent;
     border: 0.2vh solid $offWhiteColor;
     box-shadow:  rgba(245, 245, 245, 0.5) 0px 5px 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 2vh;
+    @include flexCenter (column);
+    gap: 2.5vh;
+    
 }
  
-/*
-#avalD {
-    align-self: left;
-}
-
-#avalA {
-    margin-left: auto;
-} */
 
 .avalimg {
     object-fit: cover;
-    width: 21vh;
-    height: 100%;
-    border-radius: 8px 0 0 8px;
+    width: 11vh;
+    height: 11vh;
+    box-shadow:  rgba(245, 245, 245, 0.5) 0px 5px 15px;
+    border-radius: 50%;
     margin: 0;
 }
 
 .containeraluno {
-    color: $blackColor;
-    width: 40%;
-    margin-right: 2vh;
+    max-width: 90%;
     padding: 0;   
-    text-align: left;
+    text-align: right;
     font-weight: 450;
-    @include flexSpacebetween (column);
-    gap: 3.5vh;
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+}
+
+.avalStars {
+    text-align: right;
+    margin-right: auto;
+}
+
+.checked {
+    color: $orangeColor;
+}
+
+.unchecked {
+    color: rgba(245, 245, 245, 0.5);
 }
 
 .h3aval {
@@ -275,9 +345,13 @@ section#action {
     color: $offWhiteColor;
 }
 
+.pDiv {
+    max-width: 98%;
+    position: relative;
+}
 .avaltexto {
     margin: 0;
     color: $offWhiteColor;
     font-weight: 400;
 }
-
+*/
