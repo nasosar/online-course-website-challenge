@@ -5,7 +5,7 @@
 /* início da estilização do call to action, abaixo do menu nav */
 section#action {
     height: 70vh;
-    width: auto;
+    width: 100%;
     padding: 0 10%;
     background-image: url(../../img/landing-page/background-2.png);
     background-repeat: no-repeat;
@@ -58,8 +58,8 @@ section#action {
     align-items: center;
     justify-content: space-between;
     height: 18vh;
-    width: 80vw;
-    margin: -9vh 0 4.5vh 9vw;
+    width: 80%;
+    margin: -9vh 10% 0 10%;
     padding: 0;
     border-radius: 8px;
     background-color: $pinkColor;
@@ -220,7 +220,6 @@ section#action {
     overflow-y: hidden;
     gap: 5vh;
     scroll-snap-type: x mandatory;
-    
 }
 
 

@@ -7,7 +7,7 @@
 //container de todos os elemntos da header (logo, sign in/up e navbar)
 .headercontainer {
     height: 15vh;
-    width: 100vw;
+    width: 100%;
     margin: 0;
     padding: 0 10%;
     display: flex;
@@ -86,7 +86,7 @@ hr.solid {
         margin-top: 2.5vh;
         background-color: $blackTransparent;
         .listitems{
-            padding: 1vh 3vw;
+            padding: 1vh 5vh;
             a {
                 transition: all 0.5s ease 0s;
             }

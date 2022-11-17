@@ -232,7 +232,7 @@ label {
 
 .headercontainer {
   height: 15vh;
-  width: 100vw;
+  width: 100%;
   margin: 0;
   padding: 0 10%;
   display: flex;
@@ -309,7 +309,7 @@ hr.hrmenu {
   background-color: rgba(0, 0, 0, 0.7);
 }
 .submenu:hover .cursoslist .listitems {
-  padding: 1vh 3vw;
+  padding: 1vh 5vh;
 }
 .submenu:hover .cursoslist .listitems a {
   transition: all 0.5s ease 0s;
