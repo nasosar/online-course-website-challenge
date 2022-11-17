@@ -220,9 +220,60 @@ section#action {
     overflow-y: hidden;
     gap: 5vh;
     scroll-snap-type: x mandatory;
+
+    
 }
 
+/* height */
+.avalcontainer::-webkit-scrollbar {
+    height: 20px;
+    
+  }
+  
+  /* Track */
+.avalcontainer::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px $offWhiteColor; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+.avalcontainer::-webkit-scrollbar-thumb {
+    background: rgba(245, 245, 245, 0.5); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover*/ 
+.avalcontainer::-webkit-scrollbar-thumb:hover {
+    background: $offWhiteColor; 
+  }
 
+.avalcontainer::-webkit-scrollbar-button:single-button:horizontal:increment {
+    width: 20px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 5px $offWhiteColor; 
+    background-position: center;
+    background-image: url('data:image/svg+xml;utf8,<svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16"> <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" fill="rgba(245, 245, 245, 0.7)"></path></svg>');
+  } 
+
+ .avalcontainer::-webkit-scrollbar-button:single-button:horizontal:increment:hover {
+    background: rgba(245, 245, 245, 0.5);
+    background-position: center;
+    background-image: url('data:image/svg+xml;utf8,<svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16"> <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" fill="rgb(245, 245, 245)"></path></svg>');
+ }
+ 
+ .avalcontainer::-webkit-scrollbar-button:single-button:horizontal:decrement {
+    width: 20px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 5px $offWhiteColor; 
+    background-position: center;
+    background-image: url('data:image/svg+xml;utf8,<svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16"> <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" fill="rgba(245, 245, 245, 0.7)"></path> </svg>');
+  } 
+
+  .avalcontainer::-webkit-scrollbar-button:single-button:horizontal:decrement:hover {
+    background: rgba(245, 245, 245, 0.5);
+    background-position: center;
+    background-image: url('data:image/svg+xml;utf8,<svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16"> <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" fill="rgb(245, 245, 245)"></path> </svg>');
+  }
 .cardAvaliacao {
     height: 46vh;
     width: 38vh;
