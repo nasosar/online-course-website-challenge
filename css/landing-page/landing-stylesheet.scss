@@ -25,32 +25,28 @@ section#action {
     #fadetitles {
         animation: fade-in 0.8s ease-in;
     }
+}
 
-    /* botão 'call to action' */
-    button {
-        margin-top: 3vh;
-        width: 28vh;
-        height: 7vh;
-        font-weight: bold;
-        border: .3vh solid $pinkColor;
-        color: $pinkColor;
-        background-color: rgba(0, 0, 0, 0.5);
-        transition: 0.3s;
-        border-radius: 4px;
-        font-size: 1.8vh;
-        text-shadow: $boxShadow;
-        cursor: pointer;
-    }
+/* botão 'call to action' */
+.cadastre {
+    margin-top: 3vh;
+    width: 28vh;
+    height: 7vh;
+    font-weight: bold;
+    border: .3vh solid $pinkColor;
+    color: $pinkColor;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    border-radius: 4px;
+    font-size: 1.8vh;
+    text-shadow: $boxShadow;
+    cursor: pointer;
+}
 
-    button:hover {
-        background-color: $pinkColor;
-        color: $offWhiteColor;
-        font-size: 2vh;
-    }
-
-    @media (max-width: 1099px) {
-        height: 90vh;
-    }
+.cadastre:hover {
+    background-color: $pinkColor;
+    color: $offWhiteColor;
+    font-size: 2vh;
 }
 
 .menucentral {
@@ -226,8 +222,7 @@ section#action {
 
 /* height */
 .avalcontainer::-webkit-scrollbar {
-    height: 20px;
-    
+    height: 20px; 
   }
   
   /* Track */
@@ -274,6 +269,7 @@ section#action {
     background-position: center;
     background-image: url('data:image/svg+xml;utf8,<svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16"> <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" fill="rgb(245, 245, 245)"></path> </svg>');
   }
+  
 .cardAvaliacao {
     height: 46vh;
     width: 38vh;
@@ -281,7 +277,7 @@ section#action {
     padding: 1.5vh;
     border: 0.2vh solid $offWhiteColor;
     border-radius: 8px;
-    box-shadow:  rgba(245, 245, 245, 0.5) 0px 5px 15px;
+    box-shadow:  rgba(245, 245, 245, 0.25) 5px 5px 5px;
     display: flex;
     flex-shrink: 0;
     flex-direction: column;
@@ -341,67 +337,146 @@ section#action {
 }
 
 
-/*cards de avaliação
-.articleaval {
-    height: 46vh;
-    width: 38vh;
-    padding: 2vh;
-    margin: 0;
-    border-radius: 8px;
-    background-color: transparent;
-    border: 0.2vh solid $offWhiteColor;
-    box-shadow:  rgba(245, 245, 245, 0.5) 0px 5px 15px;
-    @include flexCenter (column);
-    gap: 2.5vh;
+/* MOBILE*/
+
+@media only screen and (max-width: 850px) {
+    body {
+        height: auto;
+    }
+
+    .sectionCallToAction{
+        max-height: 250px;
+        width: 100%;
+        padding: 10% 5%;
+        margin: 0;
+        @include flexCenter (column);
+        gap: 1.5vh;
+    }
+
+    .cadastre {
+        height: 7vh;
+        width: 90%;
+        font-size: 2vh;
+        margin: 0;
+    }
+
+    .pTitulo {
+        font-size: 2vh;
+        font-weight: 400;
+    }
+
+    .calltoaction {
+        font-size: 4vh;
+        text-align: center;
+    }
+/*Barra menu central com valores*/
+    .menucentral {
+        width: 90%;
+        height: auto;
+        padding: 0;
+        margin: 10% 5%;
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;        
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+    }
+
+    .itemMenuCentral {
+        height: 25vh;
+        width: 100%;
+        flex-shrink: 0;
+        gap: 1vh;
+        scroll-snap-align: start;
+        font-size: 3vh;
+        white-space: normal;
+    }
+
+    .hrmenucentral {
+        display: none;
+    }
+
+    /*seção 1 com vídeo e propostas*/
+
+    .section1 {
+        height: auto;
+        width: 100%;
+        padding: 10% 5%;
+        margin: 0;
+        @include flexCenter (column);
+    }
+
+    .videoContainer {
+        margin: 0 0 10% 0; 
+        .frameVideo {
+            width: 90vw;
+            height: 50.6vw;      
+    }
+    }
     
-}
- 
+    .section1descricao{
+        height: auto;
+        gap: 2vh;
+    }
 
-.avalimg {
-    object-fit: cover;
-    width: 11vh;
-    height: 11vh;
-    box-shadow:  rgba(245, 245, 245, 0.5) 0px 5px 15px;
-    border-radius: 50%;
-    margin: 0;
-}
+    .h3section1 {
+        font-size: 4vh;
+        font-weight: 600;
+    }
 
-.containeraluno {
-    max-width: 90%;
-    padding: 0;   
-    text-align: right;
-    font-weight: 450;
-    display: flex;
-    align-items: center;
-    gap: 2vh;
-}
+    .pSection1 {
+        font-size: 2.5vh;
+        font-weight: 400;
+    }
 
-.avalStars {
-    text-align: right;
-    margin-right: auto;
-}
+    /*seção 2 com mercado TI*/
 
-.checked {
-    color: $orangeColor;
-}
+    .section2 {
+        height: auto;
+        width: 100%;
+        padding: 10% 5%;
+        margin: 0;
+        @include flexCenter (column);
 
-.unchecked {
-    color: rgba(245, 245, 245, 0.5);
-}
+    }
 
-.h3aval {
-    margin: 0;
-    font-weight: 500;
-    color: $offWhiteColor;
-}
+    .h2section2 {
+        font-size: 4vh;
+        font-weight: 600;
+    }
 
-.pDiv {
-    max-width: 98%;
-    position: relative;
+    .pSection2 {
+        font-size: 2.5vh;
+        font-weight: 400;
+    }
+
+    .btnSection2 {
+        height: 7vh;
+        width: 70%;
+        font-size: 2vh;
+        margin: 0;
+    }
+
+    .imgsection2 {
+        transform: scaleX(-1);
+        width: 90%;
+        height: auto;
+        margin: 5% 0 0 0;
+    }
+
+    /*seção 3 com avaliaçoes*/
+
+    .h2avaliacoes {
+        font-size: 4vh;
+        font-weight: 600;
+    }
+
+    .cardAvaliacao {
+        width: 100%;
+        height: auto;
+    }
+
+    .avalcontainer::-webkit-scrollbar {
+        display: none;
+      }
 }
-.avaltexto {
-    margin: 0;
-    color: $offWhiteColor;
-    font-weight: 400;
-}
-*/

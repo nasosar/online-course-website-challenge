@@ -746,7 +746,6 @@ section#action {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* botão 'call to action' */
 }
 section#action p {
   text-align: center;
@@ -759,7 +758,9 @@ section#action #fadetitles {
   -webkit-animation: fade-in 0.8s ease-in;
           animation: fade-in 0.8s ease-in;
 }
-section#action button {
+
+/* botão 'call to action' */
+.cadastre {
   margin-top: 3vh;
   width: 28vh;
   height: 7vh;
@@ -773,15 +774,11 @@ section#action button {
   text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   cursor: pointer;
 }
-section#action button:hover {
+
+.cadastre:hover {
   background-color: #E54190;
   color: #F5F5F5;
   font-size: 2vh;
-}
-@media (max-width: 1099px) {
-  section#action {
-    height: 90vh;
-  }
 }
 
 .menucentral {
@@ -1012,7 +1009,7 @@ section#action button:hover {
   padding: 1.5vh;
   border: 0.2vh solid #F5F5F5;
   border-radius: 8px;
-  box-shadow: rgba(245, 245, 245, 0.5) 0px 5px 15px;
+  box-shadow: rgba(245, 245, 245, 0.25) 5px 5px 5px;
   display: flex;
   flex-shrink: 0;
   flex-direction: column;
@@ -1073,67 +1070,132 @@ section#action button:hover {
   white-space: normal;
 }
 
-/*cards de avaliação
-.articleaval {
-    height: 46vh;
-    width: 38vh;
-    padding: 2vh;
+/* MOBILE*/
+@media only screen and (max-width: 850px) {
+  body {
+    height: auto;
+  }
+  .sectionCallToAction {
+    max-height: 250px;
+    width: 100%;
+    padding: 10% 5%;
     margin: 0;
-    border-radius: 8px;
-    background-color: transparent;
-    border: 0.2vh solid $offWhiteColor;
-    box-shadow:  rgba(245, 245, 245, 0.5) 0px 5px 15px;
-    @include flexCenter (column);
-    gap: 2.5vh;
-
-}
-
-
-.avalimg {
-    object-fit: cover;
-    width: 11vh;
-    height: 11vh;
-    box-shadow:  rgba(245, 245, 245, 0.5) 0px 5px 15px;
-    border-radius: 50%;
-    margin: 0;
-}
-
-.containeraluno {
-    max-width: 90%;
-    padding: 0;   
-    text-align: right;
-    font-weight: 450;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 2vh;
-}
-
-.avalStars {
-    text-align: right;
-    margin-right: auto;
-}
-
-.checked {
-    color: $orangeColor;
-}
-
-.unchecked {
-    color: rgba(245, 245, 245, 0.5);
-}
-
-.h3aval {
+    justify-content: center;
+    gap: 1.5vh;
+  }
+  .cadastre {
+    height: 7vh;
+    width: 90%;
+    font-size: 2vh;
     margin: 0;
-    font-weight: 500;
-    color: $offWhiteColor;
-}
-
-.pDiv {
-    max-width: 98%;
-    position: relative;
-}
-.avaltexto {
-    margin: 0;
-    color: $offWhiteColor;
+  }
+  .pTitulo {
+    font-size: 2vh;
     font-weight: 400;
-}
-*//*# sourceMappingURL=landing-stylesheet.css.map */
+  }
+  .calltoaction {
+    font-size: 4vh;
+    text-align: center;
+  }
+  /*Barra menu central com valores*/
+  .menucentral {
+    width: 90%;
+    height: auto;
+    padding: 0;
+    margin: 10% 5%;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow-y: hidden;
+    -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+  }
+  .itemMenuCentral {
+    height: 25vh;
+    width: 100%;
+    flex-shrink: 0;
+    gap: 1vh;
+    scroll-snap-align: start;
+    font-size: 3vh;
+    white-space: normal;
+  }
+  .hrmenucentral {
+    display: none;
+  }
+  /*seção 1 com vídeo e propostas*/
+  .section1 {
+    height: auto;
+    width: 100%;
+    padding: 10% 5%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .videoContainer {
+    margin: 0 0 10% 0;
+  }
+  .videoContainer .frameVideo {
+    width: 90vw;
+    height: 50.6vw;
+  }
+  .section1descricao {
+    height: auto;
+    gap: 2vh;
+  }
+  .h3section1 {
+    font-size: 4vh;
+    font-weight: 600;
+  }
+  .pSection1 {
+    font-size: 2.5vh;
+    font-weight: 400;
+  }
+  /*seção 2 com mercado TI*/
+  .section2 {
+    height: auto;
+    width: 100%;
+    padding: 10% 5%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .h2section2 {
+    font-size: 4vh;
+    font-weight: 600;
+  }
+  .pSection2 {
+    font-size: 2.5vh;
+    font-weight: 400;
+  }
+  .btnSection2 {
+    height: 7vh;
+    width: 70%;
+    font-size: 2vh;
+    margin: 0;
+  }
+  .imgsection2 {
+    transform: scaleX(-1);
+    width: 90%;
+    height: auto;
+    margin: 5% 0 0 0;
+  }
+  /*seção 3 com avaliaçoes*/
+  .h2avaliacoes {
+    font-size: 4vh;
+    font-weight: 600;
+  }
+  .cardAvaliacao {
+    width: 100%;
+    height: auto;
+  }
+  .avalcontainer::-webkit-scrollbar {
+    display: none;
+  }
+}/*# sourceMappingURL=landing-stylesheet.css.map */
